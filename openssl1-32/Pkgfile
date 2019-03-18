@@ -1,58 +1,37 @@
 # Description: Secure Sockets Layer and Transport Layer Security tools
-# URL: https://www.openssl.org/
-# Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
+# URL:     http://www.openssl.org/
+# Maintainer:
 
-name=openssl-32
+name=openssl1
 version=1.0.2r
 release=1
-source=(https://www.openssl.org/source/openssl-$version.tar.gz
-  openssl-1.0.2a-32bit_x86_64.patch
-  openssl-1.0.2d-parallel-build.patch)
+source=(http://www.openssl.org/source/${name:0:7}-$version.tar.gz \
+    no-rpath.patch openssl-1.0-versioned-symbols.patch)
 
 build() {
-  cd openssl-$version
-
-  # Make sure we only ever touch Makefile.org and avoid patching a file
-  # that gets blown away anyways by the Configure script
-  rm Makefile
-
-  patch -p1 -i $SRC/openssl-1.0.2a-32bit_x86_64.patch
-  patch -p1 -i $SRC/openssl-1.0.2d-parallel-build.patch
-
-  # Disable fips and man pages
-  sed \
-    -e '/DIRS/s| fips | |g' \
-    -e '/^install:/s|install_docs||' \
-    -i Makefile.org
+  cd ${name:0:7}-$version
+  patch -p0 -i $SRC/no-rpath.patch
+  patch -p1 -i $SRC/openssl-1.0-versioned-symbols.patch
+  export MAKEFLAGS="$MAKEFLAGS -j1"
+  export CC='gcc -m32'
+  export CXX='g++ -m32'
+  export PKG_CONFIG_PATH='/usr/lib32/pkgconfig'
 
   ./Configure \
-    linux-x86_64-32 \
-    --prefix=/usr \
-    --libdir=/usr/lib32/openssl-1.0 \
-    --openssldir=/etc/ssl shared
-
-  # Clean out hardcoded flags
-  local CFLAG=$(grep ^CFLAG= Makefile | LC_ALL=C sed \
-    -e 's|^CFLAG=||' \
-    -e 's|-fomit-frame-pointer ||g' \
-    -e 's|-O[0-9] ||g' \
-    -e 's|-march=[-a-z0-9]* ||g' \
-    -e 's|-mcpu=[-a-z0-9]* ||g' \
-    -e 's|-m[a-z0-9]* ||g' \
-  )
-  sed \
-    -e "/^CFLAG/s|=.*|=${CFLAG} ${CFLAGS}|" \
-    -e "/^SHARED_LDFLAGS=/s|$| ${LDFLAGS}|" \
-    -i Makefile
-
+    --prefix='/usr' \
+    --libdir='lib32/openssl-1.0' \
+    --openssldir='/etc/ssl' \
+    shared no-ssl3-method linux-elf
+  make MAKEDEPPROG="${CC}" depend
   make
-  make \
-    INSTALL_PREFIX=$PKG \
-    LIBDIR=lib32/openssl-1.0 \
-    MANDIR=/usr/share/man \
-    MANSUFFIX=ssl \
-    install
+  make INSTALL_PREFIX=$PKG install_sw
 
-  chmod -c -R +w $PKG
-  rm -r $PKG/usr/{bin,include} $PKG/etc
+  rm -rf $PKG/{etc,usr/{include,bin}}
+  mv $PKG/usr/lib32/{openssl-1.0/,}libcrypto.so.1.0.0
+  mv $PKG/usr/lib32/{openssl-1.0/,}libssl.so.1.0.0
+  ln -sf ../libssl.so.1.0.0 $PKG/usr/lib32/openssl-1.0/libssl.so
+  ln -sf ../libcrypto.so.1.0.0 $PKG/usr/lib32/openssl-1.0/libcrypto.so
+  sed -e 's|/include$|/include/openssl-1.0|' -i $PKG/usr/lib32/openssl-1.0/pkgconfig/*.pc
+  install -dm 755 $PKG/usr/share/licenses
+  ln -s openssl-1.0 $PKG/usr/share/licenses/lib32-openssl-1.0
 }
