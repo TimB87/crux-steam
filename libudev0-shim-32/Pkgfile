@@ -1,0 +1,17 @@
+# Description: libudev.so.0 compatibility library for systems with newer udev versions
+# URL: https://github.com/archlinux/libudev0-shim
+# Maintainer:
+# Depends on:
+
+name=libudev0-shim-32
+version=1
+release=1
+source=(https://github.com/archlinux/libudev0-shim/archive/v$version/${name:0:13}-$version.tar.gz)
+
+build() {
+  cd ${name:0:13}-$version
+  unset LDFLAGS
+  make CC="gcc -m32"
+  install -Dm 755 libudev.so.0.0.9999 -t $PKG/usr/lib32
+  ln -s libudev.so.0.0.9999 $PKG/usr/lib32/libudev.so.0
+}

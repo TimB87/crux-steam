@@ -1,7 +1,7 @@
 # Description: A system which facilitates service discovery on a local network via the mDNS/DNS-SD protocol suite
 # URL: http://www.avahi.org/
-# Maintainer: Matt Housh, jaeger at crux dot ninja
-# Depends on: libdaemon dbus gobject-introspection intltool
+# Maintainer:
+# Depends on: avahi
 
 name=avahi-32
 version=0.7
@@ -10,6 +10,7 @@ source=(http://avahi.org/download/${name:0:5}-$version.tar.gz)
 
 build() {
   cd ${name:0:5}-$version
+  PYTHON=/usr/bin/python3 \
   ./configure --prefix=/usr \
     --libdir=/usr/lib32 \
     --with-distro=none \

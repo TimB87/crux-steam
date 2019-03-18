@@ -1,0 +1,21 @@
+# Description: Library for Neighbor Discovery Protocol
+# URL: http://libndp.org/
+# Maintainer: Tim Biermann, tbier at posteo dot de
+# Depends on:
+
+name=libndp-32
+version=1.7
+release=1
+source=(http://libndp.org/files/${name:0:6}-$version.tar.gz)
+
+build() {
+  cd ${name:0:6}-$version
+  export CC='gcc -m32'
+  export PKG_CONFIG_PATH='/usr/lib32/pkgconfig'
+  ./configure --prefix=/usr \
+    --libdir=/usr/lib32 \
+    --libexecdir=/usr/lib32
+  make
+  make DESTDIR=$PKG install
+  rm -fr $PKG/usr/{bin,include,share}
+}

@@ -1,0 +1,21 @@
+# Description: commandline option parser
+# URL: http://rpm5.org/files/popt/
+# Packager: Robert McMeekin, viper at mcmeekin dot info
+# Maintainer:  Thomas Penteker, tek at serverop dot de
+# Packager: Matt Housh, jaeger at crux dot nu
+# Depends on: gettext
+
+name=popt-32
+version=1.16
+release=1
+source=(http://ftp.rpm.org/mirror/${name:0:4}/${name:0:4}-$version.tar.gz)
+
+build() {
+  cd ${name:0:4}-$version
+  ./configure --prefix=/usr \
+    --libdir=/usr/lib32 \
+    --disable-nls
+  make
+  make DESTDIR=$PKG pkgconfigdir='/usr/lib32/pkgconfig' install
+  rm -fr $PKG/usr/{share,include}
+}

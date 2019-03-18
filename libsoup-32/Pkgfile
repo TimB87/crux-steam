@@ -1,0 +1,23 @@
+# Description: HTTP library implementation in C.
+# URL: https://wiki.gnome.org/action/show/Projects/libsoup
+# Maintainer: Danny Rawlins, crux at romster dot me
+# Depends on: glib-networking libpsl libxml2
+# Optional: vala krb5
+
+name=libsoup-32
+version=2.66.0
+release=1
+source=(https://ftp.gnome.org/pub/gnome/sources/${name:0:7}/${version%.*}/${name:0:7}-$version.tar.xz)
+
+build() {
+	prt-get isinst vala-32 && PKGMK_LIBSOUP+=' -Dvapi=true' || PKGMK_LIBSOUP+=' -Dvapi=false'
+	prt-get isinst krb5-32 && PKGMK_LIBSOUP+=' -Dgssapi=true' || PKGMK_LIBSOUP+=' -Dgssapi=false'
+ export CC='gcc -m32'
+ export CXX='g++ -m32'
+ export PKG_CONFIG_PATH=/usr/lib32/pkgconfig
+	meson setup build ${name:0:7}-$version --prefix=/usr --libdir=/usr/lib32 ${PKGMK_LIBSOUP}
+	ninja -j ${JOBS-1} -C build
+	DESTDIR=$PKG meson install -C build
+
+	rm -r $PKG/usr/{share,include}
+}

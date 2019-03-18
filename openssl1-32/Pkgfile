@@ -2,7 +2,7 @@
 # URL:     http://www.openssl.org/
 # Maintainer:
 
-name=openssl1
+name=openssl1-32
 version=1.0.2r
 release=1
 source=(http://www.openssl.org/source/${name:0:7}-$version.tar.gz \
