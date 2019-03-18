@@ -1,0 +1,20 @@
+# Description:
+# URL:
+# Maintainer:
+# Depends on:
+
+name=steam-native-runtime
+version=0.1
+release=1
+source=()
+
+build() {
+  install -d $PKG/usr/lib/steam
+  ln -sf /usr/lib/libcurl.so.3 "${PKG}/usr/lib/steam/libcurl.so.3"
+  ln -sf /usr/lib/libcurl.so.4.5.0 "${PKG}/usr/lib/steam/libcurl.so.4"
+  ln -sf /usr/lib/libcurl.so.4.5.0 "${PKG}/usr/lib/steam/libcurl.so.4.5.0"
+  install -d "${PKG}/usr/lib32/steam"
+  ln -sf /usr/lib32/libcurl.so.3 "${PKG}/usr/lib32/steam/libcurl.so.3"
+  ln -sf /usr/lib32/libcurl.so.4.5.0 "${PKG}/usr/lib32/steam/libcurl.so.4"
+  ln -sf /usr/lib32/libcurl.so.4.5.0 "${PKG}/usr/lib32/steam/libcurl.so.4.5.0"
+}

@@ -1,0 +1,29 @@
+# Description: A sound system for POSIX OSes
+# URL: http://www.freedesktop.org/wiki/Software/PulseAudio/
+# Maintainer: Fredrik Rinnestam, fredrik at crux dot guru
+# Depends on: dbus-32 libcap-32 libtool-32 libsndfile-32
+
+name=pulseaudio-32
+version=12.2
+release=1
+source=(https://freedesktop.org/software/${name:0:10}/releases/${name:0:10}-$version.tar.xz)
+
+build() {
+  cd ${name:0:10}-$version
+
+  ./configure --prefix=/usr \
+    --libdir=/usr/lib32 \
+    --libexecdir=/usr/lib32/$name \
+    --sysconfdir=/etc \
+    --disable-bluez4 --disable-bluez5 \
+    --disable-default-build-tests \
+    --disable-gtk3 \
+    --disable-rpath \
+    --disable-tcpwrap \
+    --disable-hal-compat \
+    --disable-openssl
+  make
+  make -j1 DESTDIR=$PKG install
+  rm -fr $PKG/usr/{bin,include,share}
+  rm -fr $PKG/lib
+}

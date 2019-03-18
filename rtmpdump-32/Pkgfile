@@ -1,0 +1,31 @@
+# Description: A tool to download rtmp streams.
+# URL: http://rtmpdump.mplayerhq.hu/
+# Maintainer: Danny Rawlins, crux at romster dot me
+# Packager: Danny Rawlins, crux at romster dot me
+# Depends on: zlib openssl nettle-32 gnutls-32
+
+name=rtmpdump-32
+version=2.4-190228
+release=1
+git=(git://git.ffmpeg.org/rtmpdump)
+build() {
+  git clone $git ${name:0:8}
+  cd ${name:0:8}
+  _ver_name='2.4'
+  _ver_commit='c28f1bab7822de97353849e7787b59e50bbb1428'
+
+  echo "${_ver_name}.r$(git rev-list --count ${_ver_commit}..HEAD).${_commit}"
+  sed -e 's/^CRYPTO=OPENSSL/#CRYPTO=OPENSSL/' -e 's/#CRYPTO=GNUTLS/CRYPTO=GNUTLS/' -i Makefile -i librtmp/Makefile
+  make \
+    OPT="$CFLAGS" \
+    XLDFLAGS="$LDFLAGS"
+  mkdir -p $PKG/usr/lib32
+  make \
+    prefix='/usr' \
+    sbindir='/usr/bin' \
+    libdir='/usr/lib32' \
+    mandir='/usr/share/man' \
+    DESTDIR=$PKG \
+    install
+  rm -fr $PKG/usr/{bin,include,share}
+}

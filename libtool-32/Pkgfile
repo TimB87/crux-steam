@@ -1,0 +1,18 @@
+# Description: A generic library support script
+# URL: http://www.gnu.org/software/libtool/
+# Maintainer:
+# Depends on:
+
+name=libtool-32
+version=2.4.6
+release=1
+source=(http://ftpmirror.gnu.org/gnu/${name:0:7}/${name:0:7}-$version.tar.xz)
+
+build() {
+  cd ${name:0:7}-$version
+  ./configure --prefix=/usr \
+    --libdir=/usr/lib32
+  make
+  make DESTDIR=$PKG install
+  rm -r $PKG/usr/{bin,include,share}
+}

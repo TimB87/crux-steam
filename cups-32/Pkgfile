@@ -1,0 +1,36 @@
+# Description: CUPS - Common UNIX Printing System
+# URL: http://www.cups.org
+# Maintainer: Tim Biermann, tbier at posteo dot de
+# Packager: Juergen Daubert, jue at crux dot nu
+# Depends on: acl libusb zlib
+
+name=cups-32
+version=2.2.10
+release=1
+source=(https://github.com/apple/cups/releases/download/v$version/${name:0:4}-$version-source.tar.gz
+    cups)
+
+build () {
+  cd ${name:0:4}-$version
+
+  CC=cc CXX=c++ \
+  ./configure --prefix=/usr \
+    --sysconfdir=/etc \
+    --libdir=/usr/lib32 \
+    --localstatedir=/var \
+    --with-docdir=/usr/share/cups/doc \
+    --with-logdir=/var/log/cups \
+    --with-cups-user=daemon \
+    --with-cups-group=lp \
+    --with-languages="" \
+    --without-{java,perl,php,python} \
+    --without-rcdir \
+    --with-optim="$CFLAGS" \
+    --enable-acl \
+    --disable-{pam,dbus,systemd} \
+    --disable-{gnutls,gssapi}
+  make
+  make BUILDROOT=$PKG install
+  rm -fr $PKG/etc
+  rm -fr $PKG/usr/{bin,sbin,lib,include,share}
+}

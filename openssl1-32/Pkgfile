@@ -1,0 +1,58 @@
+# Description: Secure Sockets Layer and Transport Layer Security tools
+# URL: https://www.openssl.org/
+# Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
+
+name=openssl-32
+version=1.0.2r
+release=1
+source=(https://www.openssl.org/source/openssl-$version.tar.gz
+  openssl-1.0.2a-32bit_x86_64.patch
+  openssl-1.0.2d-parallel-build.patch)
+
+build() {
+  cd openssl-$version
+
+  # Make sure we only ever touch Makefile.org and avoid patching a file
+  # that gets blown away anyways by the Configure script
+  rm Makefile
+
+  patch -p1 -i $SRC/openssl-1.0.2a-32bit_x86_64.patch
+  patch -p1 -i $SRC/openssl-1.0.2d-parallel-build.patch
+
+  # Disable fips and man pages
+  sed \
+    -e '/DIRS/s| fips | |g' \
+    -e '/^install:/s|install_docs||' \
+    -i Makefile.org
+
+  ./Configure \
+    linux-x86_64-32 \
+    --prefix=/usr \
+    --libdir=/usr/lib32/openssl-1.0 \
+    --openssldir=/etc/ssl shared
+
+  # Clean out hardcoded flags
+  local CFLAG=$(grep ^CFLAG= Makefile | LC_ALL=C sed \
+    -e 's|^CFLAG=||' \
+    -e 's|-fomit-frame-pointer ||g' \
+    -e 's|-O[0-9] ||g' \
+    -e 's|-march=[-a-z0-9]* ||g' \
+    -e 's|-mcpu=[-a-z0-9]* ||g' \
+    -e 's|-m[a-z0-9]* ||g' \
+  )
+  sed \
+    -e "/^CFLAG/s|=.*|=${CFLAG} ${CFLAGS}|" \
+    -e "/^SHARED_LDFLAGS=/s|$| ${LDFLAGS}|" \
+    -i Makefile
+
+  make
+  make \
+    INSTALL_PREFIX=$PKG \
+    LIBDIR=lib32/openssl-1.0 \
+    MANDIR=/usr/share/man \
+    MANSUFFIX=ssl \
+    install
+
+  chmod -c -R +w $PKG
+  rm -r $PKG/usr/{bin,include} $PKG/etc
+}

@@ -1,0 +1,45 @@
+# Description: Secure Sockets Layer and Transport Layer Security tools
+# URL:     http://www.openssl.org/
+# Maintainer:
+
+name=openssl1
+version=1.0.2r
+release=1
+source=(http://www.openssl.org/source/${name:0:7}-$version.tar.gz \
+    no-rpath.patch openssl-1.0-versioned-symbols.patch)
+
+build() {
+  cd ${name:0:7}-$version
+  patch -p0 -i $SRC/no-rpath.patch
+  patch -p1 -i $SRC/openssl-1.0-versioned-symbols.patch
+  export MAKEFLAGS="$MAKEFLAGS -j1"
+
+  ./config --prefix=/usr \
+       --openssldir=/etc/ssl \
+       --libdir=lib/openssl-1.0 \
+       shared \
+       no-ssl3-method \
+       enable-ec_nistp_64_gcc_128
+
+  sed -i "s|-O3|$CFLAGS|" Makefile
+
+  make depend
+  make
+  make INSTALL_PREFIX=$PKG LIBDIR=lib/openssl-1.0 MANDIR=/usr/share/man MANSUFFIX=ssl install_sw
+
+  find $PKG -name "*fips*" -delete
+  chmod -R +w $PKG
+
+  install -m755 -d "$PKG/usr/include/openssl-1.0"
+  mv "$PKG/usr/include/openssl" "$PKG/usr/include/openssl-1.0/"
+  mv "$PKG/usr/lib/openssl-1.0/libcrypto.so.1.0.0" "$PKG/usr/lib/"
+  mv "$PKG/usr/lib/openssl-1.0/libssl.so.1.0.0" "$PKG/usr/lib/"
+  ln -sf ../libssl.so.1.0.0 "$PKG/usr/lib/openssl-1.0/libssl.so"
+  ln -sf ../libcrypto.so.1.0.0 "$PKG/usr/lib/openssl-1.0/libcrypto.so"
+  mv "$PKG/usr/bin/openssl" "$PKG/usr/bin/openssl-1.0"
+
+  # Update includedir in .pc files
+  sed -e 's|/include$|/include/openssl-1.0|' -i $PKG/usr/lib/openssl-1.0/pkgconfig/*.pc
+
+  rm -rf $PKG/{etc,usr/bin/c_rehash}
+}
