@@ -7,8 +7,7 @@
 name=cups-32
 version=2.2.10
 release=1
-source=(https://github.com/apple/cups/releases/download/v$version/${name:0:4}-$version-source.tar.gz
-    cups)
+source=(https://github.com/apple/cups/releases/download/v$version/${name:0:4}-$version-source.tar.gz)
 
 build () {
   cd ${name:0:4}-$version
