@@ -1,7 +1,7 @@
 # Description: Video Acceleration API to enable hardware accelerated video decode/encode.
 # URL: https://01.org/linuxmedia/vaapi
-# Maintainer: Danny Rawlins, crux at romster dot me
-# Depends on: mesa3d
+# Maintainer:
+# Depends on: mesa3d-32
 
 name=libva1-32
 version=1.8.3

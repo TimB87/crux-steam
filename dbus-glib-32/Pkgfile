@@ -1,7 +1,7 @@
 # Description: D-Bus GLib bindings
 # URL: http://freedesktop.org/wiki/Software/DBusBindings
-# Maintainer: Fredrik Rinnestam, fredrik at crux dot nu
-# Depends on: dbus, glib
+# Maintainer:
+# Depends on:
 
 name=dbus-glib-32
 version=0.110

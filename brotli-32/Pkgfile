@@ -1,7 +1,7 @@
 # Description: Brotli compression library
 # URL: https://github.com/google/brotli
-# Maintainer: Danny Rawlins, crux at romster dot me
-# Depends on: cmake
+# Maintainer:
+# Depends on:
 
 name=brotli-32
 version=1.0.3

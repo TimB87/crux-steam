@@ -1,8 +1,6 @@
 # Description: commandline option parser
 # URL: http://rpm5.org/files/popt/
-# Packager: Robert McMeekin, viper at mcmeekin dot info
-# Maintainer:  Thomas Penteker, tek at serverop dot de
-# Packager: Matt Housh, jaeger at crux dot nu
+# Maintainer:
 # Depends on: gettext
 
 name=popt-32

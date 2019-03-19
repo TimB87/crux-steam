@@ -1,6 +1,6 @@
 # Description: Library for Neighbor Discovery Protocol
 # URL: http://libndp.org/
-# Maintainer: Tim Biermann, tbier at posteo dot de
+# Maintainer:
 # Depends on:
 
 name=libndp-32

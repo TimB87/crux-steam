@@ -1,7 +1,7 @@
 # Description: GObject bindings for libudev
 # URL: https://wiki.gnome.org/Projects/libgudev
-# Maintainer: Danny Rawlins, crux at romster dot me
-# Depends on: gobject-introspection
+# Maintainer:
+# Depends on:
 
 name=libgudev-32
 version=232
@@ -9,15 +9,13 @@ release=1
 source=(https://ftp.gnome.org/pub/gnome/sources/${name:0:8}/$version/${name:0:8}-$version.tar.xz)
 
 build() {
-	cd ${name:0:8}-$version
-
-	./configure \
-		--prefix=/usr \
+  cd ${name:0:8}-$version
+  ./configure \
+    --prefix=/usr \
     --libdir=/usr/lib32 \
     --disable-umockdev
-
-	sed -i 's/ -shared / -Wl,-O1,--as-needed\0/g' -i libtool
-	make
-	make install DESTDIR=$PKG
+  sed -i 's/ -shared / -Wl,-O1,--as-needed\0/g' -i libtool
+  make
+  make install DESTDIR=$PKG
   rm -fr $PKG/usr/include
 }

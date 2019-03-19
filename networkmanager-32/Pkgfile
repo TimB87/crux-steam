@@ -1,8 +1,7 @@
 # Description: Network configuration tool
 # URL: https://wiki.gnome.org/Projects/NetworkManager/
-# Maintainer: Tim Biermann, tbier at posteo dot de
-# Depends on: dhcpcd libndp libnl nss openresolv polkit upower gconf libnewt
-# Optional: ppp avahi bash-completion dbus libnl jansson libteam dnsmasq
+# Maintainer:
+# Depends on:
 
 name=networkmanager-32
 version=1.14.4
@@ -68,6 +67,7 @@ build() {
   ninja
   mkdir $SRC/install
   DESTDIR=$SRC/install/ ninja install
+
   install -dm 755 "$PKG"/usr/lib32/{pkgconfig,NetworkManager}
   cp -dr --no-preserve='ownership' $SRC/install/usr/lib32/NetworkManager/libnm.so* "$PKG"/usr/lib32/
   cp -dr --no-preserve='ownership' $SRC/install/usr/lib32/NetworkManager/pkgconfig/libnm.pc "$PKG"/usr/lib32/pkgconfig/

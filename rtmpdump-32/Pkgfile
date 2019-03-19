@@ -1,7 +1,6 @@
 # Description: A tool to download rtmp streams.
 # URL: http://rtmpdump.mplayerhq.hu/
-# Maintainer: Danny Rawlins, crux at romster dot me
-# Packager: Danny Rawlins, crux at romster dot me
+# Maintainer:
 # Depends on: zlib openssl nettle-32 gnutls-32
 
 name=rtmpdump-32

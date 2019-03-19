@@ -1,6 +1,6 @@
-# Description:	C library for encoding, decoding and manipulating JSON data.
-# URL:		http://www.digip.org/jansson/
-# Maintainer:	Alan Mizrahi, alan at mizrahi dot com dot ve
+# Description: C library for encoding, decoding and manipulating JSON data.
+# URL: http://www.digip.org/jansson/
+# Maintainer:
 # Depends on:
 
 name=jansson-32
@@ -9,14 +9,14 @@ release=1
 source=(http://www.digip.org/${name:0:7}/releases/${name:0:7}-$version.tar.bz2)
 
 build() {
-	cd ${name:0:7}-$version
+  cd ${name:0:7}-$version
 
-	./configure \
-		--prefix=/usr \
+  ./configure \
+    --prefix=/usr \
     --libdir=/usr/lib32 \
-		--mandir=/usr/share/man #lol
+    --mandir=/usr/share/man
 
-	make
-	make DESTDIR=$PKG install
+  make
+  make DESTDIR=$PKG install
   rm -fr $PKG/usr/include
 }

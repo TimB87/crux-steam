@@ -1,7 +1,7 @@
 # Description: The VP8/VP9 Codec SDK
 # URL: http://www.webmproject.org/
-# Maintainer: Danny Rawlins, crux at romster dot me
-# Depends on: yasm
+# Maintainer:
+# Depends on: yasm-32
 
 name=libvpx-32
 version=1.7.0
@@ -10,7 +10,6 @@ source=(https://github.com/webmproject/${name:0:6}/archive/v$version/${name:0:6}
 
 build() {
   cd ${name:0:6}-$version
-
   ./configure \
     --prefix=/usr \
     --libdir=/usr/lib32 \
@@ -25,7 +24,6 @@ build() {
     --disable-install-srcs \
     --enable-experimental \
     --enable-spatial-svc
-
   make
   make DIST_DIR="$PKG/usr" install
   rm -fr $PKG/usr/{bin,share,include}

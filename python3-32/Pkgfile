@@ -1,7 +1,7 @@
 # Description: Python interpreter, version 3.
 # URL: https://www.python.org/
-# Maintainer: Danny Rawlins, crux at romster dot me
-# Depends on: bzip2 expat gdbm libffi libtirpc mpdecimal sqlite3 xz
+# Maintainer:
+# Depends on:
 
 name=python3-32
 version=3.7.2
@@ -38,6 +38,9 @@ build() {
   ln -sf python3.7 $PKG/usr/bin/python3
   ln -s python3.7 $PKG/usr/lib32/python3
   ln -s python3.7 $PKG/usr/include/python3
+  #
+  # This didn't work out, and I didn't check it out further, it seems to work without?
+  #
   #ln -s /usr/lib32/libpython3.7.so $PKG/usr/lib32/python3.7m/config/libpython3.7.so
 
   mv $PKG/usr/include/python3.7m/pyconfig.h $PKG/

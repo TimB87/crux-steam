@@ -1,8 +1,7 @@
 # Description: CUPS - Common UNIX Printing System
 # URL: http://www.cups.org
-# Maintainer: Tim Biermann, tbier at posteo dot de
-# Packager: Juergen Daubert, jue at crux dot nu
-# Depends on: acl libusb zlib
+# Maintainer:
+# Depends on:
 
 name=cups-32
 version=2.2.10

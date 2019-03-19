@@ -1,7 +1,7 @@
 # Description: Library providing APIs to netlink protocol based Linux kernel interfaces
-# URL:         http://www.infradead.org/~tgr/libnl/
-# Maintainer:  Juergen Daubert, jue at crux dot nu
-
+# URL: http://www.infradead.org/~tgr/libnl/
+# Maintainer:
+# Depends on:
 name=libnl-32
 version=3.4.0
 release=1
