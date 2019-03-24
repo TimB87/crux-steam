@@ -1,0 +1,19 @@
+# Description: SDL version 2, Simple DirectMedia Layer
+# URL: http://www.libsdl.org
+# Maintainer:
+# Packager: Juergen Daubert, jue at crux dot nu
+# Depends on: alsa-lib-32 mesa3d-32 libsdl2
+
+name=libsdl2-32
+version=2.0.9
+release=1
+source=(http://www.libsdl.org/release/SDL2-$version.tar.gz)
+
+build () {
+    cd SDL2-$version
+    CONFIG_SHELL=/bin/bash ./configure --prefix=/usr \
+      --libdir=/usr/lib32
+    make
+    make DESTDIR=$PKG install
+    rm -fr $PKG/usr/{bin,include,share}
+}
