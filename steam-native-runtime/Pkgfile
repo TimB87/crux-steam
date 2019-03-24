@@ -1,7 +1,7 @@
 # Description: Meta package to run steam-native
 # URL: https://steampowered.com
 # Maintainer:
-# Depends on: brotli-32 cups-32 jansson-32 libcaca-32 libcanberra-32 libdaemon-32 libgudev-32 libndp-32 libnewt-32 libnl-32 libpsl-32 libudev0-shim-32 libva1-32 openssl1-32 popt-32 pulseaudio-32 python3-32 rtmpdump-32 slang-32 xorg-libxtst-32
+# Depends on: brotli-32 cups-32 jansson-32 libcaca-32 libcanberra-32 libdaemon-32 libgudev-32 libndp-32 libnewt-32 libnl-32 libsdl2-32 libpsl-32 libudev0-shim-32 libva1-32 openssl1-32 popt-32 pulseaudio-32 python3-32 rtmpdump-32 slang-32 xorg-libxtst-32
 
 name=steam-native-runtime
 version=0.1
