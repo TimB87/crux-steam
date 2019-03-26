@@ -27,8 +27,8 @@ build() {
   make INSTALL_PREFIX=$PKG install_sw
 
   rm -rf $PKG/{etc,usr/{include,bin}}
-  mv $PKG/usr/lib32/{openssl-1.0/,}libcrypto.so.1.0.0
-  mv $PKG/usr/lib32/{openssl-1.0/,}libssl.so.1.0.0
+  #mv $PKG/usr/lib32/{openssl-1.0/,}libcrypto.so.1.0.0
+  #mv $PKG/usr/lib32/{openssl-1.0/,}libssl.so.1.0.0
   ln -sf ../libssl.so.1.0.0 $PKG/usr/lib32/openssl-1.0/libssl.so
   ln -sf ../libcrypto.so.1.0.0 $PKG/usr/lib32/openssl-1.0/libcrypto.so
   sed -e 's|/include$|/include/openssl-1.0|' -i $PKG/usr/lib32/openssl-1.0/pkgconfig/*.pc

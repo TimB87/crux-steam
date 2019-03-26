@@ -1,7 +1,7 @@
 # Description: Brotli compression library
 # URL: https://github.com/google/brotli
 # Maintainer:
-# Depends on:
+# Depends on: brotli
 
 name=brotli-32
 version=1.0.3

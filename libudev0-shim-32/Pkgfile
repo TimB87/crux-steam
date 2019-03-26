@@ -1,7 +1,7 @@
 # Description: libudev.so.0 compatibility library for systems with newer udev versions
 # URL: https://github.com/archlinux/libudev0-shim
 # Maintainer:
-# Depends on:
+# Depends on: libudev0-shim libgudev-32
 
 name=libudev0-shim-32
 version=1

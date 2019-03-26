@@ -1,7 +1,5 @@
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/lib32/
--r-xr-xr-x	root/root	usr/lib32/libcrypto.so.1.0.0
--r-xr-xr-x	root/root	usr/lib32/libssl.so.1.0.0
 drwxr-xr-x	root/root	usr/lib32/openssl-1.0/
 drwxr-xr-x	root/root	usr/lib32/openssl-1.0/engines/
 -r-xr-xr-x	root/root	usr/lib32/openssl-1.0/engines/lib4758cca.so
@@ -18,8 +16,10 @@ drwxr-xr-x	root/root	usr/lib32/openssl-1.0/engines/
 -r-xr-xr-x	root/root	usr/lib32/openssl-1.0/engines/libubsec.so
 -rw-r--r--	root/root	usr/lib32/openssl-1.0/libcrypto.a
 lrwxrwxrwx	root/root	usr/lib32/openssl-1.0/libcrypto.so -> ../libcrypto.so.1.0.0
+-r-xr-xr-x	root/root	usr/lib32/openssl-1.0/libcrypto.so.1.0.0
 -rw-r--r--	root/root	usr/lib32/openssl-1.0/libssl.a
 lrwxrwxrwx	root/root	usr/lib32/openssl-1.0/libssl.so -> ../libssl.so.1.0.0
+-r-xr-xr-x	root/root	usr/lib32/openssl-1.0/libssl.so.1.0.0
 drwxr-xr-x	root/root	usr/lib32/openssl-1.0/pkgconfig/
 -rw-r--r--	root/root	usr/lib32/openssl-1.0/pkgconfig/libcrypto.pc
 -rw-r--r--	root/root	usr/lib32/openssl-1.0/pkgconfig/libssl.pc

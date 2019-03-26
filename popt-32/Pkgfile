@@ -1,7 +1,7 @@
 # Description: commandline option parser
 # URL: http://rpm5.org/files/popt/
 # Maintainer:
-# Depends on: gettext
+# Depends on: popt
 
 name=popt-32
 version=1.16

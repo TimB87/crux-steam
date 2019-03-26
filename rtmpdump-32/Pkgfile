@@ -1,7 +1,7 @@
 # Description: A tool to download rtmp streams.
 # URL: http://rtmpdump.mplayerhq.hu/
 # Maintainer:
-# Depends on: zlib openssl nettle-32 gnutls-32
+# Depends on: gnutls-32 openssl zlib
 
 name=rtmpdump-32
 version=2.4-190228

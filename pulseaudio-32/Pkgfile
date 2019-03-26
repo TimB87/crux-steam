@@ -1,7 +1,7 @@
 # Description: A sound system for POSIX OSes
 # URL: http://www.freedesktop.org/wiki/Software/PulseAudio/
 # Maintainer:
-# Depends on: dbus-32 libcap-32 libtool-32 libsndfile-32
+# Depends on: dbus-32 libcap-32 libtool-32 libsndfile-32 pulseaudio
 
 name=pulseaudio-32
 version=12.2
