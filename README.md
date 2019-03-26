@@ -9,8 +9,8 @@ Only for internal use and show casing :D
 
 *  networkmanager-32
 *  udev
+*  port libsdl2-32
 *  libnewt uses git as a source, it's based on tb/libnewt, maybe I should revisit them
-*  port libsdl2-32
 *  does libsoup-32 need those two check lines for vala-32 and krb5-32?
 *  python3-32 needs some checking
 *  rtmpdump-32 uses git as a source
