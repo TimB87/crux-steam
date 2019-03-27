@@ -10,18 +10,20 @@ Only for internal use and show casing :D
 *  networkmanager-32
 *  udev
 *  port libsdl2-32
-*  libnewt uses git as a source, it's based on tb/libnewt, maybe I should revisit them
-*  does libsoup-32 need those two check lines for vala-32 and krb5-32?
-*  python3-32 needs some checking
-*  rtmpdump-32 uses git as a source
-*  maybe I pulled avahi-32 by mistake?
+*  libnewt uses git as a source, it's based on tb/libnewt, maybe I should revisit them
+*  maybe I pulled avahi-32 by mistake?
   * it doesn't build right now, but it did build, which is most curious..
   * I am pretty sure I pulled that by mistake
-*  appindicator in i3bar does not show
+  * UPDATE: I think I didn't, I have avahi on my system for KODI which forced me to fork the port of cups in opt because it doesn't compile when avahi is installed. so this should work for everybody, I fixed the problem with avahi-32 and cups-32
+*  does libsoup-32 need those two check lines for vala-32 and krb5-32?
+*  python3-32 needs some checking, just to be sure
+*  rtmpdump-32 uses git as a source
+*   * either I pack it up myself and host or is it ok to use git and versioned checkout maybe?
+*  appindicator in i3bar/…? does not show
 *  clean up
   * not quiet sure how to put deps, findeps is no help. the big brother in case plus maybe python or whatever?
-  * cleaned up most Pkgfiles (didn't put deps yet)
-  * deps should be fine?!
+  *  cleaned up most Pkgfiles (didn't put deps yet)
+  *  deps should be fine?!
 * Darkest Dungeon seems to run, but DOOM (the new one) which depends on Steam Proton (wine :D) doesn't
   * Total War: Warhammer runs (native feral port) fine as is too
 
