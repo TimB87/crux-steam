@@ -10,6 +10,7 @@ source=(http://avahi.org/download/${name:0:5}-$version.tar.gz)
 
 build() {
   cd ${name:0:5}-$version
+  export PKG_CONFIG_PATH='/usr/lib32/pkgconfig'
   PYTHON=/usr/bin/python3 \
   ./configure --prefix=/usr \
     --libdir=/usr/lib32 \
@@ -18,6 +19,7 @@ build() {
     --disable-gtk3 \
     --disable-qt3 \
     --disable-qt4 \
+    --disable-python \
     --disable-pygobject \
     --disable-python-dbus \
     --disable-mono \
