@@ -1,7 +1,7 @@
 # Description: CUPS - Common UNIX Printing System
-# URL: http://www.cups.org
+# URL: https://www.cups.org
 # Maintainer:
-# Depends on:
+# Depends on: cups libpsl avahi-32
 
 name=cups-32
 version=2.2.11
