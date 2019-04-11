@@ -1,0 +1,14 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/etc/
+drwxr-xr-x	root/root	usr/etc/xdg/
+drwxr-xr-x	root/root	usr/etc/xdg/autostart/
+-rw-r--r--	root/root	usr/etc/xdg/autostart/at-spi-dbus-bus.desktop
+drwxr-xr-x	root/root	usr/lib32/
+drwxr-xr-x	root/root	usr/lib32/at-spi2/
+-rwxr-xr-x	root/root	usr/lib32/at-spi2/at-spi-bus-launcher
+-rwxr-xr-x	root/root	usr/lib32/at-spi2/at-spi2-registryd
+lrwxrwxrwx	root/root	usr/lib32/libatspi.so -> libatspi.so.0
+lrwxrwxrwx	root/root	usr/lib32/libatspi.so.0 -> libatspi.so.0.0.1
+-rwxr-xr-x	root/root	usr/lib32/libatspi.so.0.0.1
+drwxr-xr-x	root/root	usr/lib32/pkgconfig/
+-rw-r--r--	root/root	usr/lib32/pkgconfig/atspi-2.pc

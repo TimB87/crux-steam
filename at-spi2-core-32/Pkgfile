@@ -1,0 +1,21 @@
+# Description:  Interface for atk
+# URL:    http://developer.gnome.org/libatspi/
+# Maintainer:
+# Depends on: dbus gobject-introspection intltool xorg-libxtst meson ninja
+
+name=at-spi2-core-32
+version=2.32.0
+release=1
+source=(http://ftp.gnome.org/pub/gnome/sources/at-spi2-core/${version:0:4}/at-spi2-core-$version.tar.xz)
+
+build() {
+  cd ${name:0:12}-$version
+  sed -i 's/subdir:/install_dir:/' atspi/meson.build
+  meson build --prefix /usr \
+    --sysconfdir=/usr/etc \
+    --libdir=/usr/lib32 \
+    --libexecdir=/usr/lib32/at-spi2 \
+    -D default_bus=dbus-broker
+  DESTDIR=$PKG ninja -C build -j ${JOBS:-1} install
+  rm -fr $PKG/usr/{bin,share,lib,etc,include}
+}
