@@ -1,0 +1,23 @@
+# Description:
+# URL:
+# Maintainer:
+# Depends on:
+
+name=libdbusmenu-gtk2
+version=16.04.0
+release=1
+source=(https://launchpad.net/libdbusmenu/${version%.?}/$version/+download/libdbusmenu-$version.tar.gz)
+
+build() {
+  cd libdbusmenu-$version
+  export HAVE_VALGRIND_TRUE='#'
+  export HAVE_VALGRIND_FALSE=''
+  ./configure --prefix=/usr \
+      --sysconfdir=/etc \
+      --localstatedir=/var \
+      --disable-{dumper,static,tests} \
+      --with-gtk=2
+  make
+  make -j1 -C libdbusmenu-glib DESTDIR=$PKG install
+  make -j1 -C libdbusmenu-gtk DESTDIR=$PKG install
+}
