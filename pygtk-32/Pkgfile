@@ -14,7 +14,7 @@ build() {
 	cd pygtk-$version
 
 	# https://bugzilla.gnome.org/show_bug.cgi?id=623965
-#	patch -p1 -i $SRC/python27.patch
+	patch -p1 -i $SRC/python27.patch
 
 	# https://bugzilla.gnome.org/show_bug.cgi?id=660216
 	patch -p1 -i $SRC/fix-leaks-of-pango-objects.patch

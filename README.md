@@ -5,6 +5,9 @@ It works!
 ![screenshot](steam-native.png)
 Only for internal use and show casing :D
 
+# 05/14/19
+Everything should work out of the box. Except libappindicator-gtk2-32, which fails for pygtk2-32 and pygobject-32 not being available. pygtk-32 fails for pygobject-32 not being available, which needs gobject-32 which also doesn't compile. arch doesn't have any of that crap ported it seems. https://www.archlinux.org/packages/multilib/x86_64/lib32-libappindicator-gtk2/
+
 # To Do
 
 *  networkmanager-32
@@ -19,13 +22,16 @@ Only for internal use and show casing :D
 *  python3-32 needs some checking, just to be sure
 *  rtmpdump-32 uses git as a source
 *   * either I pack it up myself and host or is it ok to use git and versioned checkout maybe?
+    * since you updated your port of rtmpdump, I just should use the same source over here
 *  appindicator in i3bar/…? does not show
+  * we are missing libappindicator-gtk2-32...
 *  clean up
   * not quiet sure how to put deps, findeps is no help. the big brother in case plus maybe python or whatever?
   *  cleaned up most Pkgfiles (didn't put deps yet)
   *  deps should be fine?!
 * Darkest Dungeon seems to run, but DOOM (the new one) which depends on Steam Proton (wine :D) doesn't
   * Total War: Warhammer runs (native feral port) fine as is too
+  * as far as I understand, PROTON is not supposed to run from an native runtime?
 
 # Notes
 
