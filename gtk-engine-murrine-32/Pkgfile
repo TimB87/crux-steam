@@ -1,0 +1,24 @@
+# Description: Cairo based GTK engine.
+# URL: https://launchpad.net/murrine
+# Maintainer: Danny Rawlins, crux at romster dot me
+# Packager: Bartlomiej Palmowski, rotwang at crux dot org dot pl
+# Depends on: gtk
+
+name=gtk-engine-murrine-32
+version=0.98.2
+release=1
+source=(http://ftp.gnome.org/pub/GNOME/sources/murrine/${version::4}/murrine-$version.tar.xz)
+
+build() {
+	cd murrine-$version
+
+	./configure \
+		--prefix=/usr \
+    --libdir=/usr/lib32 \
+		--enable-animation \
+		--enable-animationrtl
+
+	make
+	make DESTDIR=$PKG install
+  rm -fr $PKG/usr/{bin,include,share}
+}
