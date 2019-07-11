@@ -1,0 +1,56 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/include/
+drwxr-xr-x	root/root	usr/include/libappindicator-0.1/
+drwxr-xr-x	root/root	usr/include/libappindicator-0.1/libappindicator/
+-rw-r--r--	root/root	usr/include/libappindicator-0.1/libappindicator/app-indicator-enum-types.h
+-rw-r--r--	root/root	usr/include/libappindicator-0.1/libappindicator/app-indicator.h
+drwxr-xr-x	root/root	usr/include/libappindicator3-0.1/
+drwxr-xr-x	root/root	usr/include/libappindicator3-0.1/libappindicator/
+-rw-r--r--	root/root	usr/include/libappindicator3-0.1/libappindicator/app-indicator-enum-types.h
+-rw-r--r--	root/root	usr/include/libappindicator3-0.1/libappindicator/app-indicator.h
+drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/girepository-1.0/
+-rw-r--r--	root/root	usr/lib/girepository-1.0/AppIndicator-0.1.typelib
+-rw-r--r--	root/root	usr/lib/girepository-1.0/AppIndicator3-0.1.typelib
+-rwxr-xr-x	root/root	usr/lib/libappindicator.la
+lrwxrwxrwx	root/root	usr/lib/libappindicator.so -> libappindicator.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib/libappindicator.so.1 -> libappindicator.so.1.0.0
+-rwxr-xr-x	root/root	usr/lib/libappindicator.so.1.0.0
+-rwxr-xr-x	root/root	usr/lib/libappindicator3.la
+lrwxrwxrwx	root/root	usr/lib/libappindicator3.so -> libappindicator3.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib/libappindicator3.so.1 -> libappindicator3.so.1.0.0
+-rwxr-xr-x	root/root	usr/lib/libappindicator3.so.1.0.0
+drwxr-xr-x	root/root	usr/lib/mono/
+drwxr-xr-x	root/root	usr/lib/mono/appindicator-sharp-0.1/
+-rw-r--r--	root/root	usr/lib/mono/appindicator-sharp-0.1/appindicator-sharp.dll
+-rw-r--r--	root/root	usr/lib/mono/appindicator-sharp-0.1/appindicator-sharp.dll.config
+-rw-r--r--	root/root	usr/lib/mono/appindicator-sharp-0.1/policy.0.0.appindicator-sharp.config
+-rw-r--r--	root/root	usr/lib/mono/appindicator-sharp-0.1/policy.0.0.appindicator-sharp.dll
+-rw-r--r--	root/root	usr/lib/mono/appindicator-sharp-0.1/policy.0.1.appindicator-sharp.config
+-rw-r--r--	root/root	usr/lib/mono/appindicator-sharp-0.1/policy.0.1.appindicator-sharp.dll
+drwxr-xr-x	root/root	usr/lib/mono/appindicator-sharp/
+lrwxrwxrwx	root/root	usr/lib/mono/appindicator-sharp/appindicator-sharp.dll -> ../gac/appindicator-sharp/0.2.0.0__bcae265d1c7ab4c2/appindicator-sharp.dll
+lrwxrwxrwx	root/root	usr/lib/mono/appindicator-sharp/policy.0.0.appindicator-sharp.dll -> ../gac/policy.0.0.appindicator-sharp/0.0.0.0__bcae265d1c7ab4c2/policy.0.0.appindicator-sharp.dll
+drwxr-xr-x	root/root	usr/lib/mono/gac/
+drwxr-xr-x	root/root	usr/lib/mono/gac/appindicator-sharp/
+drwxr-xr-x	root/root	usr/lib/mono/gac/appindicator-sharp/0.2.0.0__bcae265d1c7ab4c2/
+-rwxr-xr-x	root/root	usr/lib/mono/gac/appindicator-sharp/0.2.0.0__bcae265d1c7ab4c2/appindicator-sharp.dll
+-rw-r--r--	root/root	usr/lib/mono/gac/appindicator-sharp/0.2.0.0__bcae265d1c7ab4c2/appindicator-sharp.dll.config
+drwxr-xr-x	root/root	usr/lib/mono/gac/policy.0.0.appindicator-sharp/
+drwxr-xr-x	root/root	usr/lib/mono/gac/policy.0.0.appindicator-sharp/0.0.0.0__bcae265d1c7ab4c2/
+-rw-r--r--	root/root	usr/lib/mono/gac/policy.0.0.appindicator-sharp/0.0.0.0__bcae265d1c7ab4c2/policy.0.0.appindicator-sharp.config
+-rwxr-xr-x	root/root	usr/lib/mono/gac/policy.0.0.appindicator-sharp/0.0.0.0__bcae265d1c7ab4c2/policy.0.0.appindicator-sharp.dll
+drwxr-xr-x	root/root	usr/lib/pkgconfig/
+-rw-r--r--	root/root	usr/lib/pkgconfig/appindicator-0.1.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/appindicator-sharp-0.1.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/appindicator3-0.1.pc
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/gir-1.0/
+-rw-r--r--	root/root	usr/share/gir-1.0/AppIndicator-0.1.gir
+-rw-r--r--	root/root	usr/share/gir-1.0/AppIndicator3-0.1.gir
+drwxr-xr-x	root/root	usr/share/vala/
+drwxr-xr-x	root/root	usr/share/vala/vapi/
+-rw-r--r--	root/root	usr/share/vala/vapi/appindicator-0.1.deps
+-rw-r--r--	root/root	usr/share/vala/vapi/appindicator-0.1.vapi
+-rw-r--r--	root/root	usr/share/vala/vapi/appindicator3-0.1.deps
+-rw-r--r--	root/root	usr/share/vala/vapi/appindicator3-0.1.vapi
