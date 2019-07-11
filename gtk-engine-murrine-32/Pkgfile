@@ -1,6 +1,6 @@
 # Description: Cairo based GTK engine.
 # URL: https://launchpad.net/murrine
-# Maintainer: Danny Rawlins, crux at romster dot me
+# Maintainer: Tim Biermann, tbier at posteo dot de
 # Packager: Bartlomiej Palmowski, rotwang at crux dot org dot pl
 # Depends on: gtk
 

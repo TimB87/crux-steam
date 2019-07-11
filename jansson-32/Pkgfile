@@ -1,6 +1,6 @@
 # Description: C library for encoding, decoding and manipulating JSON data.
 # URL: http://www.digip.org/jansson/
-# Maintainer:
+# Maintainer: Tim Biermann, tbier at posteo dot de
 # Depends on:
 
 name=jansson-32

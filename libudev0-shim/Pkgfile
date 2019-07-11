@@ -1,6 +1,6 @@
 # Description: libudev.so.0 compatibility library for systems with newer udev versions
 # URL: https://github.com/archlinux/libudev0-shim
-# Maintainer:
+# Maintainer: Tim Biermann, tbier at posteo dot de
 # Depends on:
 
 name=libudev0-shim

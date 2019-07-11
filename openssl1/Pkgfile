@@ -1,6 +1,6 @@
 # Description: Secure Sockets Layer and Transport Layer Security tools
 # URL:     http://www.openssl.org/
-# Maintainer:
+# Maintainer: Tim Biermann, tbier at posteo dot de
 
 name=openssl1
 version=1.0.2s

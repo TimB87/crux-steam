@@ -1,6 +1,6 @@
 # Description: The VP8/VP9 Codec SDK
 # URL: http://www.webmproject.org/
-# Maintainer:
+# Maintainer: Tim Biermann, tbier at posteo dot de
 # Depends on: yasm-32
 
 name=libvpx-32

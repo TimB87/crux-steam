@@ -1,6 +1,6 @@
 # Description: Python bindings for GLib/GObject/GIO/GTK+/GStreamer
 # URL: https://wiki.gnome.org/Projects/PyGObject
-# Maintainer: Danny Rawlins, crux at romster dot me
+# Maintainer: Tim Biermann, tbier at posteo dot de
 # Depends on: gobject-introspection python-cairo
 
 name=python-gobject-32

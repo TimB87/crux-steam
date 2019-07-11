@@ -1,6 +1,6 @@
 # Description:  Interface for atk
 # URL:    http://developer.gnome.org/libatspi/
-# Maintainer:
+# Maintainer: Tim Biermann, tbier at posteo dot de
 # Depends on: dbus gobject-introspection intltool xorg-libxtst meson ninja
 
 name=at-spi2-core-32

@@ -1,6 +1,6 @@
 # Description: SDL version 2, Simple DirectMedia Layer
 # URL: http://www.libsdl.org
-# Maintainer:
+# Maintainer: Tim Biermann, tbier at posteo dot de
 # Packager: Juergen Daubert, jue at crux dot nu
 # Depends on: alsa-lib-32 mesa3d-32 libsdl2
 

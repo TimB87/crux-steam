@@ -1,6 +1,6 @@
 # Description: Network configuration tool
 # URL: https://wiki.gnome.org/Projects/NetworkManager/
-# Maintainer:
+# Maintainer: Tim Biermann, tbier at posteo dot de
 # Depends on:
 
 name=networkmanager-32

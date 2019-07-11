@@ -1,6 +1,6 @@
 # Description: Meta package to run steam-native
 # URL: https://steampowered.com
-# Maintainer:
+# Maintainer: Tim Biermann, tbier at posteo dot de
 # Depends on: brotli-32 cups-32 jansson-32 libcaca-32 libcanberra-32 libdaemon-32 libndp-32 libnewt-32 libnl-32 libpsl-32 libsdl2-32 libudev0-shim-32 libva1-32 openssl1-32 pulseaudio-32 python3-32 rtmpdump-32 steam vulkan-loader-32 xorg-libxscrnsaver-32 xorg-libxtst-32
 
 name=steam-native-runtime

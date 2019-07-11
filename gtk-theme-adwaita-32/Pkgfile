@@ -1,7 +1,7 @@
 # Description: gtk2 theme matching the default gtk3 theme Adwaita
 # URL:         https://git.gnome.org/browse/gnome-themes-standard/
 # Packager:    Svyatoslav Mishyn, juef at openmailbox dot org
-# Maintainer:  Fredrik Rinnestam, fredrik at rinnestam dot se
+# Maintainer: Tim Biermann, tbier at posteo dot de
 # Depends on:  gtk-32
 
 name=gtk-theme-adwaita-32

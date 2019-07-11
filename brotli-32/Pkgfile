@@ -1,6 +1,6 @@
 # Description: Brotli compression library
 # URL: https://github.com/google/brotli
-# Maintainer:
+# Maintainer: Tim Biermann, tbier at posteo dot de
 # Depends on: brotli
 
 name=brotli-32

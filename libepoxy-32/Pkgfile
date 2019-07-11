@@ -1,6 +1,6 @@
 # Description: A library for handling OpenGL function pointer management
 # URL: https://github.com/anholt/libepoxy
-# Maintainer: CRUX Xorg Team, xorg-ports at crux dot nu
+# Maintainer: Tim Biermann, tbier at posteo dot de
 # Depends on: mesa3d-32
 
 name=libepoxy-32
