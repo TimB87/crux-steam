@@ -1,7 +1,7 @@
 # Description: A multi-platform toolkit for creating graphical user interfaces
 # URL: http://www.gtk.org/
 # Maintainer: Tim Biermann, tbier at posteo dot de
-# Depends on: libepoxy-32 at-spi2-atk-32 libxkbcommon-32 wayland-32 wayland-protocols
+# Depends on: atk-32 at-spi2-atk-32 at-spi2-core-32 cups-32 dbus-32 gdk-pixbuf-32 libepoxy-32 libxkbcommon-32 pango-32 wayland-32 wayland-protocols-32 xorg-libxcomposite-32 xorg-libxcursor-32 xorg-libxi-32 xorg-libxinerama-32
 
 name=gtk3-32
 version=3.24.10

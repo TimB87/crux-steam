@@ -1,20 +1,17 @@
 # Description: A multi-platform toolkit for creating graphical user interfaces
 # URL: http://www.gtk.org/
-# Maintainer: Fredrik Rinnestam, fredrik at crux dot nu
-# Depends on: gdk-pixbuf, pango, at-spi2-atk, libepoxy
+# Maintainer: Tim Biermann, tbier at posteo dot de
+# Depends on: at-spi2-atk avahi cups gdk-pixbuf graphite2 libepoxy libxkbcommon pango util-linux wayland wayland-protocols xorg-libxcomposite xorg-libxcursor xorg-libxinerama
 
 name=gtk3
 version=3.24.10
-release=1
+release=2
 source=(http://download.gnome.org/sources/gtk+/${version:0:4}/gtk+-$version.tar.xz)
 
 build () {
   cd gtk+-$version
 
   mkdir builddir ; cd builddir
-  #sed -e 's/testinc.*//g' \
-  #-e '817d' -e '818d' -e '819d' -e '820d' \
-  #  -i ../meson.build
   meson .. --prefix=/usr \
     -Dgtk_doc=false \
     -Dman-pages=false \
@@ -24,7 +21,6 @@ build () {
     -Dmedia=all
   ninja
   DESTDIR=$PKG ninja install
-    #-D{broadway,wayland,win32,quartz}-backend=false \
 
   rm -r $PKG/usr/share/{locale,gtk-3.0}
   rm $PKG/usr/bin/gtk-update-icon-cache
