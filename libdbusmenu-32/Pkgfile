@@ -1,0 +1,49 @@
+# Description:
+# URL:
+# Maintainer:
+# Depends on:
+
+name=libdbusmenu-32
+version=16.04.0
+release=1
+source=(https://launchpad.net/libdbusmenu/${version%.?}/$version/+download/libdbusmenu-$version.tar.gz)
+
+build() {
+  cd libdbusmenu-$version
+  export CC='gcc -m32'
+  export CXX='g++ -m32'
+  #export PKG_CONFIG_PATH='/usr/lib32/pkgconfig:/usr/lib/pkgconfig:/usr/share/pkgconfig'
+  export PKG_CONFIG_PATH='/usr/lib32/pkgconfig'
+  export HAVE_VALGRIND_TRUE='#'
+  export HAVE_VALGRIND_FALSE=''
+  mkdir -p build{-gtk2,-gtk3}
+  cd build-gtk3
+  ../configure --prefix=/usr \
+    --libdir=/usr/lib32 \
+    --sysconfdir=/etc \
+    --localstatedir=/var \
+    --disable-{gtk-doc,nls,dumper,static,tests} \
+    --disable-vala \
+    --with-gtk=3
+  #sed -e 's!\/usr\/lib32\/libgthread-2.0.la!\/usr\/lib32\/libgthread-2.0.so!g' -i libdbusmenu-gtk/libdbusmenu-gtk*.la
+  make -j1 || true
+  sed -e 's/\/usr\/lib32\/libgthread-2.0.la/\/usr\/lib32\/libgthread-2.0.so/g' -i libdbusmenu-gtk/libdbusmenu-gtk3.la
+  make -j1
+  #make DESTDIR=$PKG install
+  make -j1 -C libdbusmenu-glib DESTDIR=$PKG install
+  make -j1 -C libdbusmenu-gtk DESTDIR=$PKG install || true
+  cd ../build-gtk2
+  ../configure --prefix=/usr \
+    --libdir=/usr/lib32 \
+    --sysconfdir=/etc \
+    --localstatedir=/var \
+    --disable-{dumper,static,tests} \
+    --disable-vala \
+    --with-gtk=2
+  make -j1 || true
+  sed -e 's/\/usr\/lib32\/libgthread-2.0.la/\/usr\/lib32\/libgthread-2.0.so/g' -i libdbusmenu-gtk/libdbusmenu-gtk.la
+  make -j1
+  make -j1 -C libdbusmenu-glib DESTDIR=$PKG install
+  make -j1 -C libdbusmenu-gtk DESTDIR=$PKG install || true
+  rm -fr $PKG/usr/{share,include}
+}

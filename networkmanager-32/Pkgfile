@@ -1,7 +1,7 @@
 # Description: Network configuration tool
 # URL: https://wiki.gnome.org/Projects/NetworkManager/
 # Maintainer: Tim Biermann, tbier at posteo dot de
-# Depends on:
+# Depends on: curl-32
 
 name=networkmanager-32
 version=1.14.4
