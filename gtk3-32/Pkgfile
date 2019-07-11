@@ -1,23 +1,30 @@
 # Description: A multi-platform toolkit for creating graphical user interfaces
 # URL: http://www.gtk.org/
 # Maintainer: Tim Biermann, tbier at posteo dot de
-# Depends on: libepoxy-32 at-spi2-atk
+# Depends on: libepoxy-32 at-spi2-atk-32 libxkbcommon-32 wayland-32 wayland-protocols
 
 name=gtk3-32
-version=3.24.7
+version=3.24.10
 release=1
 source=(http://download.gnome.org/sources/gtk+/${version:0:4}/gtk+-$version.tar.xz)
 
 build () {
   cd gtk+-$version
 
-  ./configure --prefix=/usr \
+  export CC='gcc -m32'
+  export CXX='/bin/false'
+  export PKG_CONFIG_PATH=/usr/lib32/pkgconfig:/usr/share/pkgconfig
+
+  mkdir builddir ; cd builddir
+  meson .. --prefix=/usr \
     --libdir=/usr/lib32 \
-    --disable-schemas-compile \
-    --enable-x11-backend
+    -Dgtk_doc=false \
+    -Dman-pages=false \
+    -D{broadway,wayland,win32,quartz}-backend=false \
+    -Dbuild-{examples,tests}=false \
+    -Ddemos=false
+  ninja
+  DESTDIR=$PKG ninja install
 
-  make
-  make DESTDIR=$PKG install
-
-  rm -r $PKG/usr/{share,bin,etc,include}
+  rm -r $PKG/usr/{share,bin,include}
 }
