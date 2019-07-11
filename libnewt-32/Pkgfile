@@ -1,15 +1,17 @@
 # Description: a programming library for color text mode
 # URL: https://pagure.io/newt
 # Maintainer:
-# Depends on: slang-32 popt-32
+# Depends on: slang-32 popt-32 tcl-32
 
 name=libnewt-32
 version=0.52.20
-release=1
+release=2
 source=(https://releases.pagure.org/newt/newt-$version.tar.gz)
 git=(https://pagure.io/newt.git)
 
 build() {
+  #git clone $git newt
+  #cd newt
   cd newt-$version
   sed -i "s:tcl8.4:tcl8.6:" Makefile.in
   echo '#define USE_INTERP_RESULT 1' >> config.h
