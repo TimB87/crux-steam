@@ -5,6 +5,11 @@ It works!
 ![screenshot](steam-native.png)
 Only for internal use and show casing :D
 
+# 07/12/19
+Icons work! They only needed mono, gtk-sharp and libappindicator build with sharp bindings... because that's what icons usually need? :D
+This still will need a good sweeping!
+Also - signatures are added!
+
 # 05/14/19
 Everything should work out of the box. Except libappindicator-gtk2-32, which fails for pygtk2-32 and pygobject-32 not being available. pygtk-32 fails for pygobject-32 not being available, which needs gobject-32 which also doesn't compile. arch doesn't have any of that crap ported it seems. https://www.archlinux.org/packages/multilib/x86_64/lib32-libappindicator-gtk2/
 
@@ -18,13 +23,15 @@ Everything should work out of the box. Except libappindicator-gtk2-32, which fai
   * it doesn't build right now, but it did build, which is most curious..
   * I am pretty sure I pulled that by mistake
   * UPDATE: I think I didn't, I have avahi on my system for KODI which forced me to fork the port of cups in opt because it doesn't compile when avahi is installed. so this should work for everybody, I fixed the problem with avahi-32 and cups-32
+*  appindicator in i3bar/…? does not show
+  * we are missing libappindicator-gtk2-32...
+  * it works in a very hacky manner!
+  * libdbusmenu-32, libindicator-32 and libappindicator-32 need another, more skilled look?
 *  does libsoup-32 need those two check lines for vala-32 and krb5-32?
 *  python3-32 needs some checking, just to be sure
 *  rtmpdump-32 uses git as a source
 *   * either I pack it up myself and host or is it ok to use git and versioned checkout maybe?
     * since you updated your port of rtmpdump, I just should use the same source over here
-*  appindicator in i3bar/…? does not show
-  * we are missing libappindicator-gtk2-32...
 *  clean up
   * not quiet sure how to put deps, findeps is no help. the big brother in case plus maybe python or whatever?
   *  cleaned up most Pkgfiles (didn't put deps yet)
