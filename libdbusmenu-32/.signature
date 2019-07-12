@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/crux-steam.pub
+RWSi213OStfp/v/nuQk3p9xDfKJ6iHJGTdco62mENpGLrvVegJRvZcFF6DaLAfyF1UlUlt2yxC9DT+7X4zX4Yu/Tp/EXQRcYWgg=
+SHA256 (Pkgfile) = 81b2eee2daa1ffe17d522b4a773c004ef6d324e3b530a6bf0136c8be3aa5f4b7
+SHA256 (.footprint) = e13042059f416d8adb4c79d1117f8fc56189500df9a29b048566e026d75fe273
+SHA256 (libdbusmenu-16.04.0.tar.gz) = b9cc4a2acd74509435892823607d966d424bd9ad5d0b00938f27240a1bfa878a

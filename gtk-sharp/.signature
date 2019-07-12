@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/crux-steam.pub
+RWSi213OStfp/lWtiaAAIn3g6lfAjT27U1g6GWSgRyNEzCoDKNwyVC0KWwyscfsHu+xwqJ+NxcvffjhOOdYJXoSg4ckUYQYpGQc=
+SHA256 (Pkgfile) = d0cfe6f44dea4bd1b23be89a397b5347e15ead0438b82e6b171b587c7751d1a9
+SHA256 (.footprint) = b5cbd58a208b880eb304e27af2a4fb81e13a3660bd9218ad5e2861b93648f31b
+SHA256 (gtk-sharp-2.12.45.tar.gz) = 02680578e4535441064aac21d33315daa009d742cab8098ac8b2749d86fffb6a

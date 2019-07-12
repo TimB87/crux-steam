@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/crux-steam.pub
+RWSi213OStfp/ivwc4lNCNA+YnM+miJ+JXVzlK9iksfIqg9/RmAV2WtbG3Ft6p32QRdLtK5DJ4KkHSMguXO39yx6ZPusu2cBfAU=
+SHA256 (Pkgfile) = 0fb3c3c51a7b15e4e73ee221a2cea864d8881f6ce8e9ab73931cead91c41827e
+SHA256 (.footprint) = 546afd2ef717af9bc0c7151f47f6ab332d15cc8323224aa9a44142a745dbfffe
+SHA256 (libndp-1.7.tar.gz) = 2c480afbffb02792dbae3c13bbfb71d89f735562f2795cca0640ed3428b491b6

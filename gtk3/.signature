@@ -1,5 +1,5 @@
-untrusted comment: verify with /etc/ports/opt.pub
-RWSE3ohX2g5d/VOa4Lxhlut9N3zLkbMRCr3fOUtQzBz+kymZgYJWKL8rtWovVxp7BpP2K9fGmA1315iJZTvca8WiMH1l5MVjjgY=
-SHA256 (Pkgfile) = ea1d82f210f1868a3110536935b5a873ad93637500322ff5bf27d0af46e42306
-SHA256 (.footprint) = 0e8a63957189ed4ee19aaf415240fea13a82ee78b2086c8b5b237bca3ef9ad91
+untrusted comment: verify with /etc/ports/crux-steam.pub
+RWSi213OStfp/vH1mtbaPPDu7I/rC2VFhftEPx7n3huI2gkYVy/L2pyrCZbcFCf/gK4OuJ1MNrZ95vU0RRs2bGCbsP0KG+bkYAU=
+SHA256 (Pkgfile) = d200e4d1c2356e68ffb47ed77485783c43289e5eb81c2e50697e7949bca7ee12
+SHA256 (.footprint) = de50b660fd468e5ce54d876d234c773ad0193157bd92de0aea4294750c690599
 SHA256 (gtk+-3.24.10.tar.xz) = 35a8f107e2b90fda217f014c0c15cb20a6a66678f6fd7e36556d469372c01b03

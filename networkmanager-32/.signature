@@ -1,0 +1,6 @@
+untrusted comment: verify with /etc/ports/crux-steam.pub
+RWSi213OStfp/jZqDnqMcDNTZduw55orhbgoeITqd/lw32GBuZQsQ5QSxuPeHa7pOV1kIBmTuI2//r8/23gSTXZ2VLN1ZPPKJwI=
+SHA256 (Pkgfile) = 1a894629eb976f9a9e6fad32833b30a4fe7ea1d89eca51b6a5e87eb5a7d13730
+SHA256 (.footprint) = 5602b3235642b6355c862f8ee0065d7f8f2e99e238c66c0a63bc733fceb38711
+SHA256 (NetworkManager-1.14.4.tar.xz) = 35a3ede4c7d12d6212033c9e44cb82b7692f38063b53a067567f02f5937c8c18
+SHA256 (disable_wifi_scan_when_connected.patch) = 860a772fcc26271f6a25a2baa0d92088e63dbf1770ccc4c25e71653dbe46b96b

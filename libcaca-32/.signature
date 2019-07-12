@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/crux-steam.pub
+RWSi213OStfp/lCiP5jmCfc6dFjHj69TQxWWq4FrMUvX9thFOkTiQ+TdIx1D65a5nVNskdF7mKm/u/tuDeqr6SWD7tsBkazQKgo=
+SHA256 (Pkgfile) = efdb44768e3347dc6942e6ad27167acbaeb37e84240bfea8a3f38dc48c65d3ed
+SHA256 (.footprint) = a1a3e4407683d637e066703b4f32ca59b5f8f41e4fb24899608f81b76e9072ea
+SHA256 (libcaca-0.99.beta19.tar.gz) = 128b467c4ed03264c187405172a4e83049342cc8cc2f655f53a2d0ee9d3772f4

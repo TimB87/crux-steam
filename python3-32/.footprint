@@ -65,6 +65,7 @@ drwxr-xr-x	root/root	usr/lib32/python3.6/lib-dynload/
 -rwxr-xr-x	root/root	usr/lib32/python3.6/lib-dynload/grp.cpython-36m-i386-linux-gnu.so
 -rwxr-xr-x	root/root	usr/lib32/python3.6/lib-dynload/math.cpython-36m-i386-linux-gnu.so
 -rwxr-xr-x	root/root	usr/lib32/python3.6/lib-dynload/mmap.cpython-36m-i386-linux-gnu.so
+-rwxr-xr-x	root/root	usr/lib32/python3.6/lib-dynload/nis.cpython-36m-i386-linux-gnu.so
 -rwxr-xr-x	root/root	usr/lib32/python3.6/lib-dynload/ossaudiodev.cpython-36m-i386-linux-gnu.so
 -rwxr-xr-x	root/root	usr/lib32/python3.6/lib-dynload/parser.cpython-36m-i386-linux-gnu.so
 -rwxr-xr-x	root/root	usr/lib32/python3.6/lib-dynload/pyexpat.cpython-36m-i386-linux-gnu.so

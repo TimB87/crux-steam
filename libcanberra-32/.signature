@@ -1,0 +1,7 @@
+untrusted comment: verify with /etc/ports/crux-steam.pub
+RWSi213OStfp/l6y5A5zs2wbO/9NX2bld/CIjWEOe3zMJ4bMLdAv1E7FDtD/piovrq8AIP35c/xCXXNsGABDTp0i8PvLm9cdEQM=
+SHA256 (Pkgfile) = 3e18424d32173d2705ddbb84314b296d875f91d6992a2b78327523295b9b9ae4
+SHA256 (.footprint) = 156ef0d53b040bde69dba03fbb1f18ad5a1dd664162becdffab32f8fb8ec73f9
+SHA256 (libcanberra-0.30.tar.xz) = c2b671e67e0c288a69fc33dc1b6f1b534d07882c2aceed37004bf48c601afa72
+SHA256 (libcanberra-broadway-fix.patch) = 5c07bf6a7199d992e6f797de157bf4368391e597ab7a332da401269a8d8dd12b
+SHA256 (libcanberra-multi-backend.patch) = de146cae3e40a16b38c8edb4f1a3a423c64eb9c5000e36c316b677e9909c9b06

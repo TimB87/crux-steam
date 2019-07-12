@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/crux-steam.pub
+RWSi213OStfp/jJUputRtTJzs9riPISZbaF8HWqrTDePsznaCA2PXiyT8h7eCnPLtQ5Fkri2LP5vcZpjStW+XLNPkuHHIZ4E1gc=
+SHA256 (Pkgfile) = 2bdb39ef51762fdec4fe7511c6a0b3448edf16d4ebcb4b7cc5c07c9c2d7ac047
+SHA256 (.footprint) = 9af1cbaf9f0a25c7351614de810a4c76327cf6308a71062749d4fc080b129a80
+SHA256 (libepoxy-1.4.3.tar.xz) = 0b808a06c9685a62fca34b680abb8bc7fb2fda074478e329b063c1f872b826f6

@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/crux-steam.pub
+RWSi213OStfp/pAlrcJHgL+8hRLvwV55XPsEttznzkULIGxXp4WbStT+i34xoXROQU5WnD2bhuR2FpAVfVm++u1zv/oAopRFnA4=
+SHA256 (Pkgfile) = a460b809b3f6352af978eaff08af9c8b16c246ec8addf39d0110780f7ce3fe3c
+SHA256 (.footprint) = 10be06e12a3e9ee45f32c7fe67dc8df9d03a2affb24e48eeea80e525ff010e56
+SHA256 (brotli-v1.0.3.tar.gz) = 7948154166ef8556f8426a4ede219aaa98a81a5baffe1f7cf2523fa67d59cd1c

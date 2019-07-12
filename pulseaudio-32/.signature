@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/crux-steam.pub
+RWSi213OStfp/uToT9Fmw7987j4Q1yiyql6NO3XS2QL9dmPI1xcPvwVZLSGnZEcr429XCtowTIbRvF0bNG+iWzOBhbUsYc6oNw0=
+SHA256 (Pkgfile) = d530b17ab396b5c315d263d2c55a8d83a5867850758121e151f1e2a5900e5de9
+SHA256 (.footprint) = 221fba89cf37f3b832cbb15f9468747b4facd12902aca60d03f2ccc4cc2afadb
+SHA256 (pulseaudio-12.2.tar.xz) = 809668ffc296043779c984f53461c2b3987a45b7a25eb2f0a1d11d9f23ba4055

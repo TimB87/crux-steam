@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/crux-steam.pub
+RWSi213OStfp/l61zRZPW0X6s1iMklHrVwdT2/sH09D/VtKlcMmYfF4cVLwx+EgpFZmfCc2pPINwMhVkq4Jd8NzTKXfGAOX8OAQ=
+SHA256 (Pkgfile) = 9d7988f98e67253df32a9350ee539c401cbe255e7a9f82bf4e7c668b5ef7856a
+SHA256 (.footprint) = 72672f00a60e8c04ea9b831436f3cb0549f814cf40e21f9647f008ef73d7ee4c
+SHA256 (tcl8.6.9-src.tar.gz) = ad0cd2de2c87b9ba8086b43957a0de3eb2eb565c7159d5f53ccbba3feb915f4e

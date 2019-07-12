@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/crux-steam.pub
+RWSi213OStfp/t0LQYXvwEXUI7XKZYP6lncrnwq5iCX8eQNoo67I+3btmD4hbt84oTD9UN/gNC5YRgFyRaI8KW7KH+Q+CBOybQA=
+SHA256 (Pkgfile) = 7c4006aa9158d807787a94dfcddb42bfad81074e33c1a5808226fc3ad5284efb
+SHA256 (.footprint) = d4458b2130566a73cf1b512266fd79b4a7205b6ac3eae28cead3eee8ff755e62
+SHA256 (avahi-0.7.tar.gz) = 57a99b5dfe7fdae794e3d1ee7a62973a368e91e414bd0dfa5d84434de5b14804

@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/crux-steam.pub
+RWSi213OStfp/hkScXp75saqo9M/iBbA4FOHgbFo+2w0Cl9OC0YsWArvn6T3FJ3TwC94vsJw7sEiU9k7dMBYX89CZyPJbWvqCAs=
+SHA256 (Pkgfile) = 85b026aaee07d2538532811b07df8a84f77f80d56875b2a25153be194d393294
+SHA256 (.footprint) = 3663d9ab623e6fe28506112122a96165a0a59d9100b429a8eb2d9bb0d1e325fe
+SHA256 (newt-0.52.20.tar.gz) = 8d66ba6beffc3f786d4ccfee9d2b43d93484680ef8db9397a4fb70b5adbb6dbc

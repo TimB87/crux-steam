@@ -1,7 +1,7 @@
-# Description:
-# URL:
+# Description: The Tcl scripting language.
+# URL: https://www.tcl.tk/
 # Maintainer: Tim Biermann, tbier at posteo dot de
-# Depends on:
+# Depends on: tcl
 
 name=tcl-32
 version=8.6.9
@@ -9,20 +9,20 @@ release=2
 source=(https://downloads.sourceforge.net/tcl/tcl8.6.9-src.tar.gz)
 
 build() {
-cd ${name%-*}$version
-rm -rf pkgs/sqlite3*
-cd unix
+  cd ${name%-*}$version
+  rm -rf pkgs/sqlite3*
+  cd unix
   export CC='gcc -m32'
   export CXX='g++ -m32'
   export PKG_CONFIG_PATH=/usr/lib32/pkgconfig
-	./configure \
-		--prefix=/usr \
+  ./configure \
+    --prefix=/usr \
     --libdir=/usr/lib32 \
-		--mandir=/usr/share/man \
+    --mandir=/usr/share/man \
     --enable-threads
 
-	make
-	make INSTALL_ROOT=$PKG install install-private-headers
+  make
+  make INSTALL_ROOT=$PKG install install-private-headers
   make INSTALL_ROOT="$PKG" install install-private-headers
   rm -rf "$PKG"/usr/{bin,include,lib,share}
   ln -sf libtcl${pkgver%.*}.so "$PKG"/usr/lib32/libtcl.so
@@ -30,19 +30,19 @@ cd unix
   chmod 644 "$PKG"/usr/lib32/libtclstub8.6.a
 
   sed -e "s#$SRC/tcl$version/unix#/usr/lib32#" \
-      -e "s#$SRC/tcl$version#/usr/include#" \
-      -i "$PKG/usr/lib32/tclConfig.sh"
+    -e "s#$SRC/tcl$version#/usr/include#" \
+    -i "$PKG/usr/lib32/tclConfig.sh"
 
   tdbcver=1.1.0
   sed -e "s#$SRC/tcl$version/unix/pkgs/tdbc${tdbcver}#/usr/lib32/tdbc${tdbcver}#" \
-      -e "s#$SRC/tcl$version/pkgs/tdbc${tdbcver}/generic#/usr/include#" \
-      -e "s#$SRC/tcl$version/pkgs/tdbc${tdbcver}/library#/usr/lib32/tcl${pkgver%.*}#" \
-      -e "s#$SRC/tcl$version/pkgs/tdbc${tdbcver}#/usr/include#" \
-      -i "$PKG/usr/lib32/tdbc${tdbcver}/tdbcConfig.sh"
+    -e "s#$SRC/tcl$version/pkgs/tdbc${tdbcver}/generic#/usr/include#" \
+    -e "s#$SRC/tcl$version/pkgs/tdbc${tdbcver}/library#/usr/lib32/tcl${pkgver%.*}#" \
+    -e "s#$SRC/tcl$version/pkgs/tdbc${tdbcver}#/usr/include#" \
+    -i "$PKG/usr/lib32/tdbc${tdbcver}/tdbcConfig.sh"
 
   ictlver=4.1.2
   sed -e "s#$SRC/tcl$version/unix/pkgs/itcl${ictlver}#/usr/lib32/${ictlver}#" \
-      -e "s#$SRC/tcl$version/pkgs/itcl${ictlver}/generic#/usr/include#" \
-      -e "s#$SRC/tcl$version/pkgs/itcl${ictlver}#/usr/include#" \
-      -i "$PKG/usr/lib32/itcl${ictlver}/itclConfig.sh"
+    -e "s#$SRC/tcl$version/pkgs/itcl${ictlver}/generic#/usr/include#" \
+    -e "s#$SRC/tcl$version/pkgs/itcl${ictlver}#/usr/include#" \
+    -i "$PKG/usr/lib32/itcl${ictlver}/itclConfig.sh"
 }
