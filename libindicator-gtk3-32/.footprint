@@ -1,0 +1,11 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/lib32/
+drwxr-xr-x	root/root	usr/lib32/libindicator2/
+-rwxr-xr-x	root/root	usr/lib32/libindicator2/indicator-loader3
+-rwxr-xr-x	root/root	usr/lib32/libindicator3.la
+lrwxrwxrwx	root/root	usr/lib32/libindicator3.so -> libindicator3.so.7.0.0
+lrwxrwxrwx	root/root	usr/lib32/libindicator3.so.7 -> libindicator3.so.7.0.0
+-rwxr-xr-x	root/root	usr/lib32/libindicator3.so.7.0.0
+drwxr-xr-x	root/root	usr/lib32/pkgconfig/
+-rw-r--r--	root/root	usr/lib32/pkgconfig/indicator3-0.4.pc
+drwxr-xr-x	root/root	usr/share/
