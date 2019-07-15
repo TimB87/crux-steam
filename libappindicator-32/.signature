@@ -1,8 +1,0 @@
-untrusted comment: verify with /etc/ports/crux-steam.pub
-RWSi213OStfp/hOj1bbRHpx+frzlNx1nMtSKH3BF/0B4HWbZBimFQuzVficw07QzJ5pFGyvJg+6oCjp2KBfo6c//nhYLhNDAxQw=
-SHA256 (Pkgfile) = e821a763334a81888cb9e0ec602b1562ca6b8ebae0baf0d49dc699c8164b511b
-SHA256 (.footprint) = d3f0d2ec5c58579d489dfba12f01898639f19447fe8c2f306d5028333e363eb4
-SHA256 (libappindicator-12.10.0.tar.gz) = d5907c1f98084acf28fd19593cb70672caa0ca1cf82d747ba6f4830d4cc3b49f
-SHA256 (incompatible_pointer_build_fix.patch) = 790a936efdcd54d8a369734546ae2879c6077865270be4bce9a59532292df256
-SHA256 (no-python.patch) = a10e2bc67fdfed814a8b4d56a0bae7db4a642327a2d08305ca15e806b5f6df83
-SHA256 (improved-plasma.patch) = b5ee550484aebc13eccbee181f355416efa1de917317c00b044266104418526a
