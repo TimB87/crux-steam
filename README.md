@@ -5,8 +5,11 @@ It works!
 ![screenshot](steam-native.png)
 Only for internal use and show casing :D
 
+# 07/15/19
+"indicator ports" are polished up and added to the optional depends for `steam-native-runtime`
+
 # 07/12/19
-Icons work! They only needed mono, gtk-sharp and libappindicator build with sharp bindings... because that's what icons usually need? :D
+Icons work! They only needed `mono`, `gtk-sharp` and `libappindicator` build with sharp bindings... because that's what icons usually need? :D
 This still will need a good sweeping!
 Also - signatures are added!
 
@@ -27,6 +30,7 @@ Everything should work out of the box. Except libappindicator-gtk2-32, which fai
   * we are missing libappindicator-gtk2-32...
   * it works in a very hacky manner!
   * libdbusmenu-32, libindicator-32 and libappindicator-32 need another, more skilled look?
+  * they should be fine now
 *  does libsoup-32 need those two check lines for vala-32 and krb5-32?
 *  python3-32 needs some checking, just to be sure
 *  rtmpdump-32 uses git as a source
@@ -35,10 +39,11 @@ Everything should work out of the box. Except libappindicator-gtk2-32, which fai
 *  clean up
   * not quiet sure how to put deps, findeps is no help. the big brother in case plus maybe python or whatever?
   *  cleaned up most Pkgfiles (didn't put deps yet)
-  *  deps should be fine?!
+  *  deps should be fine?! mostly at least
 * Darkest Dungeon seems to run, but DOOM (the new one) which depends on Steam Proton (wine :D) doesn't
   * Total War: Warhammer runs (native feral port) fine as is too
   * as far as I understand, PROTON is not supposed to run from an native runtime?
+  * most of the Stuff *just works* for me (tb)
 
 # Notes
 
