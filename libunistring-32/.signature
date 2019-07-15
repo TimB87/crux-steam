@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/crux-steam.pub
+RWSi213OStfp/sO3oVR10mFEZGat0AOEKIFDWededRr8s/Fk3pHwSWgbRLZXtYeno+E2lAmnIGNmSHboZN7ClxDeUoEGwiAP7QM=
+SHA256 (Pkgfile) = 75b7b307a4ffd0870fb009e7aafa934906b4269657af807ab13f256b0e512a09
+SHA256 (.footprint) = 9cf51be3546ea3c8821a177c90be9301859276668e43089e78c89c30cad45dcc
+SHA256 (libunistring-0.9.10.tar.xz) = eb8fb2c3e4b6e2d336608377050892b54c3c983b646c561836550863003c05d7
