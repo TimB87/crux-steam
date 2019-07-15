@@ -1,7 +1,7 @@
 # Description: Public Suffix List library.
 # URL: https://github.com/rockdaboot/libpsl
 # Maintainer: Tim Biermann, tbier at posteo dot de
-# Depends on:
+# Depends on: python-32 libpsl libunistring-32
 
 name=libpsl-32
 version=0.20.2
