@@ -1,5 +1,7 @@
-untrusted comment: verify with /etc/ports/mate.pub
-RWTDGCtBFHpiOb4hMQMU1bf6lvgGUeexp2p4yL69HXofiMEOr0n8bHi9pTUWM/pjFhXnJBXqJOjP7saDuP4p7iM2tQSIPrPuzgM=
-SHA256 (Pkgfile) = 8115adc9b06d50d5f0b7dddccf3e70563d24882b1215cee8bb97ae290eabb5a5
-SHA256 (.footprint) = 88fc291aa6fdea97766ba9b7aee939af4497dfa0b1cbbf891ebf9bb62dd8802f
-SHA256 (ayatana-ido-0.4.2.tar.gz) = 627937cdc35f30aedd80b2aa03325d25bc25ed8e75a2b5c50487f81ebc6fc517
+untrusted comment: verify with /etc/ports/crux-steam.pub
+RWSi213OStfp/nnZL5Y2D5cLKkhHamWaJno8p7O6xR16GHtHLJbZwEKO9JsgdRJ3bDzwHyOuk0wcJgldoC9uDUqN0Jqalosy1Ag=
+SHA256 (Pkgfile) = cf0b2bc25ee17930251f65423aceb569c86a62d6e0776d52639b705fe04ba058
+SHA256 (.footprint) = 4aed7b56f36b7ea372a31eaebf9ccbb64c0fc93f6a09b76ea29e1ac54810a196
+SHA256 (libido3-16.10.tar.gz) = 9b205871268379560b00bc960fabc5c0c71b480d4469c738fb01f3f19e20ea6a
+SHA256 (ido-optional-ubuntu-private.patch) = 9b627a4c7ec2d3f2fa0c28761445e7b961a9ca5a473fe2b8a462018b667e2996
+SHA256 (0001-Temporarily-disable-previous-button-drop-shadow-draw.patch) = 735fdec1318655026840686d8c581cdd87d7aefed8b6ea8ea53901d3c903ed88

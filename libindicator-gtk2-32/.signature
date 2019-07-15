@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/crux-steam.pub
+RWSi213OStfp/jO8nj73DL3kOW0zBzhpKce2G/jLS9eaWyodoVeAKFZX6LQ5lgh0J0X2it5ehn18FPQVSmFvenV7ya+s1439FQQ=
+SHA256 (Pkgfile) = 3b958052d82a2f1a8cebb76717ff2fb1632596b787ee2ab9d0e2bb8576248f5b
+SHA256 (.footprint) = 02d500ef3011fd38ae3de60d25c4cbbe49681a0081c0ab21363fc42c57effdcd
+SHA256 (libindicator-16.10.tar.gz) = 03bb0f6aa4c0eeefd53f040f641e42bdccb8f7b791685bbdefd2cee50d95ca51
