@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/crux-steam.pub
-RWSi213OStfp/iaPVnIOJ9zbycuJe8K2g2SNhYT7dgdxnmqu/bqJ5zuBiGMtUVAEm6F+1wqNudFYG2ljnd6Ap2ZWePpy6WIoLA4=
-SHA256 (Pkgfile) = 954afb8fe8c759138b1e54b85b8c4739fd230434f3f85f8db476470d0d55e1cc
-SHA256 (.footprint) = 023db6295dc62d56b70c2bc67bcf0d4910f254910f444fbf66328678f3e9d959
-SHA256 (libpsl-0.20.2.tar.gz) = f8fd0aeb66252dfcc638f14d9be1e2362fdaf2ca86bde0444ff4d5cc961b560f
+RWSi213OStfp/ha3elZ4hjw5YcIussljIXUsa1iGCKHJv950YY3eqX7PAyfltW14WTj+ay12r2sV8LlYwhpQsebzeuAT82rOhAI=
+SHA256 (Pkgfile) = 6bcba5e1f5ca031d2eb7c1395a962e58c6b2e839e278fa57d5de63d6c646d5ce
+SHA256 (.footprint) = 066f65ea41f70ed863b5d2f86e8a733f81771e66aef91a29d93839fbc40213a6
+SHA256 (libpsl-0.21.0.tar.gz) = 41bd1c75a375b85c337b59783f5deb93dbb443fb0a52d257f403df7bd653ee12
