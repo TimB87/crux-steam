@@ -1,7 +1,7 @@
 untrusted comment: verify with /etc/ports/crux-steam.pub
-RWSi213OStfp/gbBQY2jS1LJ237eDgPwIcWR2ou234G3pR+QTNJHtfaArl/fi1WCMRe6PmpuIzjLWGCD0Zgpgkt66eh4WeBd2gE=
-SHA256 (Pkgfile) = fd4462dd7231737664d6b4a2e6d16f16d35cabe5af8f17752d7514150bd4a67d
-SHA256 (.footprint) = bd84f9276e55035204bfb46e3a807c402aad110003fd56f8a42dcacecb5aa329
-SHA256 (Python-3.6.7.tar.xz) = 81fd1401a9d66533b0a3e9e3f4ea1c7c6702d57d5b90d659f971e6f1b745f77d
+RWSi213OStfp/vJI2FphcICYmaxFp0+vjturpYgIuRKGGtANa3MYIC5HysXKPkeBjz+HWtsEBY37WTW8aOz5af3LIloaUtSEXAg=
+SHA256 (Pkgfile) = 383e5a2cb5618e2d3f3f921045bc733e75349bb4440b054545de63f0aa6eb24c
+SHA256 (.footprint) = 8c0ceb9a1eb6054641a8506a59d3a1f856f0b996a4bebe3a670e8cac642509f6
+SHA256 (Python-3.7.3.tar.xz) = da60b54064d4cfcd9c26576f6df2690e62085123826cff2e667e72a91952d318
 SHA256 (dont-make-libpython-readonly.patch) = a2be8b0573072ae3332bba2ccc646f0d5280af354a59066149f9a92b5f48c64a
 SHA256 (0001-compileall-Fix-ddir-when-recursing.patch) = c502d1de8464602e0d931899d9d388fb27b4b18601248088e51f270166fae07f

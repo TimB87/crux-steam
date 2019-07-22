@@ -4,7 +4,7 @@
 # Depends on: python3
 
 name=python3-32
-version=3.6.7
+version=3.7.3
 release=1
 source=(https://www.python.org/ftp/python/$version/Python-$version.tar.xz dont-make-libpython-readonly.patch 0001-compileall-Fix-ddir-when-recursing.patch)
 
@@ -35,18 +35,15 @@ build() {
 
   make
   make -j1 DESTDIR=$PKG install
-  ln -sf python3.6 $PKG/usr/bin/python3
-  ln -s python3.6 $PKG/usr/lib32/python3
-  ln -s python3.6 $PKG/usr/include/python3
-  #
-  # This didn't work out, and I didn't check it out further, it seems to work without?
-  #
+  ln -sf python3.7 $PKG/usr/bin/python3
+  ln -s python3.7 $PKG/usr/lib32/python3
+  ln -s python3.7 $PKG/usr/include/python3
   #ln -s /usr/lib32/libpython3.7.so $PKG/usr/lib32/python3.7m/config/libpython3.7.so
 
-  mv $PKG/usr/include/python3.6m/pyconfig.h $PKG/
+  mv $PKG/usr/include/python3.7m/pyconfig.h $PKG/
   rm -r $PKG/usr/{bin,include,lib,share/man}
-  install -d $PKG/usr/include/python3.6
-  mv $PKG/pyconfig.h $PKG/usr/include/python3.6/pyconfig-32.h
+  install -d $PKG/usr/include/python3.7
+  mv $PKG/pyconfig.h $PKG/usr/include/python3.7/pyconfig-32.h
 
-  install -d $PKG/usr/lib32/python3.6/site-packages
+  install -d $PKG/usr/lib32/python3.7/site-packages
 }
