@@ -4,8 +4,8 @@
 # Depends on: slang-32 popt-32 tcl-32
 
 name=libnewt-32
-version=0.52.20
-release=2
+version=0.52.21
+release=1
 source=(https://releases.pagure.org/newt/newt-$version.tar.gz)
 git=(https://pagure.io/newt.git)
 
