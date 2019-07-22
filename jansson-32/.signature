@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/crux-steam.pub
-RWSi213OStfp/lz+YXFybhtSa7E+AK0W4YMAcOIEdS/5d7vtOnHUSb18c474UhOI2tPKtMVS9VN8bNRsCCXLFtYQpbz2WRjPMAA=
-SHA256 (Pkgfile) = a412e58f35ddcf81cc7b388af66e888cde7cd8492475c3dbb23a94dab857767b
-SHA256 (.footprint) = f5e85cb691fff32fd2aa93cf31b7e1a515f0b2f0287a2d490c9dfff1695a5426
-SHA256 (jansson-2.7.tar.bz2) = 459f2b7cf22fb676286723f26169a17cf111fbfb6f54e3dc2ec6b6f9f4a97bdc
+RWSi213OStfp/luk1lfr+FrgqQIndaNBLfCuZVtEEeVFbYA8Ck+h6uitmdhQgdHrTukMGAfOwbMztOr113OsUlp6BgorhtXRMAE=
+SHA256 (Pkgfile) = bf50b341f1fcedf841da4f2b33eaf6f01939910670010ec1647dab47a03db6ae
+SHA256 (.footprint) = b4f8a5e128dffa5f08e29df7e9eea317dcaa9914e55d4a1c89a9621c92208235
+SHA256 (jansson-2.12.tar.bz2) = 645d72cc5dbebd4df608d33988e55aa42a7661039e19a379fcbe5c79d1aee1d2
