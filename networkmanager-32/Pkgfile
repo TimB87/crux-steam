@@ -4,17 +4,14 @@
 # Depends on: curl-32
 
 name=networkmanager-32
-version=1.14.4
+version=1.18.0
 release=1
 source=(
-http://ftp.gnome.org/pub/gnome/sources/NetworkManager/${version%.*}/NetworkManager-${version}.tar.xz
-disable_wifi_scan_when_connected.patch
-)
+http://ftp.gnome.org/pub/gnome/sources/NetworkManager/${version%.*}/NetworkManager-${version}.tar.xz)
 
 build() {
   cd NetworkManager-$version
 
-  patch -Np1 -i ../disable_wifi_scan_when_connected.patch
   sed '/initrd/d' -i src/meson.build
 
   mkdir build
@@ -39,7 +36,7 @@ build() {
     -Dsession_tracking_consolekit=false \
     -Dwifi=false \
     -Dwext=false \
-    -Dpolkit=no \
+    -Dpolkit=false \
     -Dmodify_system=true \
     -Dlibnm_glib=true \
     -Difupdown=false \
