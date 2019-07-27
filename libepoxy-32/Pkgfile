@@ -4,7 +4,7 @@
 # Depends on: mesa3d-32
 
 name=libepoxy-32
-version=1.4.3
+version=1.5.3
 release=1
 source=(https://github.com/anholt/libepoxy/releases/download/$version/${name:0:8}-$version.tar.xz)
 
