@@ -4,9 +4,9 @@
 # Depends on: tcl
 
 name=tcl-32
-version=8.6.9
+version=8.6.6
 release=2
-source=(https://downloads.sourceforge.net/tcl/tcl8.6.9-src.tar.gz)
+source=(https://downloads.sourceforge.net/tcl/tcl$version-src.tar.gz)
 
 build() {
   cd ${name%-*}$version
@@ -33,14 +33,14 @@ build() {
     -e "s#$SRC/tcl$version#/usr/include#" \
     -i "$PKG/usr/lib32/tclConfig.sh"
 
-  tdbcver=1.1.0
+  tdbcver=1.0.4
   sed -e "s#$SRC/tcl$version/unix/pkgs/tdbc${tdbcver}#/usr/lib32/tdbc${tdbcver}#" \
     -e "s#$SRC/tcl$version/pkgs/tdbc${tdbcver}/generic#/usr/include#" \
     -e "s#$SRC/tcl$version/pkgs/tdbc${tdbcver}/library#/usr/lib32/tcl${pkgver%.*}#" \
     -e "s#$SRC/tcl$version/pkgs/tdbc${tdbcver}#/usr/include#" \
     -i "$PKG/usr/lib32/tdbc${tdbcver}/tdbcConfig.sh"
 
-  ictlver=4.1.2
+  ictlver=4.0.5
   sed -e "s#$SRC/tcl$version/unix/pkgs/itcl${ictlver}#/usr/lib32/${ictlver}#" \
     -e "s#$SRC/tcl$version/pkgs/itcl${ictlver}/generic#/usr/include#" \
     -e "s#$SRC/tcl$version/pkgs/itcl${ictlver}#/usr/include#" \
