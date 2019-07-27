@@ -5,7 +5,7 @@
 # Depends on: alsa-lib-32 mesa3d-32 libsdl2
 
 name=libsdl2-32
-version=2.0.9
+version=2.0.10
 release=1
 source=(http://www.libsdl.org/release/SDL2-$version.tar.gz)
 
