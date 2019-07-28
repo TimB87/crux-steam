@@ -1,7 +1,7 @@
 # Description: Library for passing menus over DBus - gtk2 Files
 # URL: https://launchpad.net/libdbusmenu
 # Maintainer: Tim Biermann, tbier at posteo dot de
-# Depends on: graphite2 gtk libdbusmenu-glib util-linux xorg-libxdamage
+# Depends on: graphite2 gtk json-glib libdbusmenu-glib util-linux xorg-libxdamage
 
 name=libdbusmenu-gtk2
 version=18.10
