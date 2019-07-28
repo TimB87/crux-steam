@@ -1,7 +1,7 @@
 # Description: Generic Cascading Style Sheet parsing and manipulation toolkit.
 # URL: https://gitlab.gnome.org/GNOME/libcroco
 # Maintainer: Tim Biermann, tbier at posteo dot de
-# Depends on: glib libxml2
+# Depends on: libcroco glib-32 libcroco libxml2-32
 
 name=libcroco-32
 version=0.6.13
