@@ -1,7 +1,7 @@
 # Description: Python interpreter, version 3.
 # URL: https://www.python.org/
 # Maintainer: Tim Biermann, tbier at posteo dot de
-# Depends on: python3
+# Depends on: bzip2-32 expat-32 gdbm-32 libffi-32 libtirpc-32 openssl-32 python3 sqlite3-32 util-linux-32 xz-32
 
 name=python3-32
 version=3.7.3
