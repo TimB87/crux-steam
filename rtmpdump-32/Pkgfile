@@ -1,7 +1,7 @@
 # Description: A tool to download rtmp streams.
 # URL: http://rtmpdump.mplayerhq.hu/
 # Maintainer: Tim Biermann, tbier at posteo dot de
-# Depends on: gnutls-32 git
+# Depends on: gnutls-32 rtmpdump zlib-32
 
 name=rtmpdump-32
 version=2.4
