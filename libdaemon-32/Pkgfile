@@ -1,7 +1,7 @@
 # Description: a lightweight C library that eases the writing of UNIX daemons
 # URL: http://0pointer.de/lennart/projects/libdaemon/
 # Maintainer: Tim Biermann, tbier at posteo dot de
-# Depends on:
+# Depends on: libdaemon
 
 name=libdaemon-32
 version=0.14
