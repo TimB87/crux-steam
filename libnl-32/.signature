@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/crux-steam.pub
-RWSi213OStfp/huZFGvsdKtewVPYe93N79r2aUpeNEqKyNhqZjxHBW+8K5sPpdQoMUpQQkB3aKgu68tfNvQ+zCHTFRHpelx7Mww=
-SHA256 (Pkgfile) = 5d8492b94854353bf6229b70091950bb2d86429aafa8b83059f7438e7fe3ffd0
+RWSi213OStfp/tYsDQLsQIAGUWYciqjsKtAbkOxbYGvk3qzBr2ETCw4RCVydlerZ8+w2M5Iks9+25v8b0LDf1IgAm015LuU+kgQ=
+SHA256 (Pkgfile) = 9dc8c51718de7f13038a9cdcd1ea9adb0ddf33a217683c3e1740ac129951aa44
 SHA256 (.footprint) = c182b687ed8c7f3626a5ddde74d672eddb9666f5c83e33f85744a3f6c3e560ea
 SHA256 (libnl-3.4.0.tar.gz) = b7287637ae71c6db6f89e1422c995f0407ff2fe50cecd61a312b6a9b0921f5bf
