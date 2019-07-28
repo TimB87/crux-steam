@@ -1,7 +1,7 @@
 # Description: C library for encoding, decoding and manipulating JSON data.
 # URL: http://www.digip.org/jansson/
 # Maintainer: Tim Biermann, tbier at posteo dot de
-# Depends on:
+# Depends on: jansson-32
 
 name=jansson-32
 version=2.12
@@ -10,12 +10,10 @@ source=(http://www.digip.org/${name:0:7}/releases/${name:0:7}-$version.tar.bz2)
 
 build() {
   cd ${name:0:7}-$version
-
   ./configure \
     --prefix=/usr \
     --libdir=/usr/lib32 \
     --mandir=/usr/share/man
-
   make
   make DESTDIR=$PKG install
   rm -fr $PKG/usr/include
