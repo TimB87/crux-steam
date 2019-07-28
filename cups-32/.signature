@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/crux-steam.pub
-RWSi213OStfp/jT1xAgA9zrKJELM3xVdvSBABw6jqYgESIHTRpLa3KFxhwUbK3fSysy7GjvVGvQDwHvQodbHixDhqeJl4RQBoQc=
-SHA256 (Pkgfile) = ed6249e31af902e7b5d6de303068c2e22f3734c8e64dd8ccf55f6fc366a5ca0a
+RWSi213OStfp/k07S6RxjqLl2oVfTSv5O/XU2A3URuAyNXllJd0n9jBYbmUpFZTg/wRkVcGku4uZmJvcE8lUC5X3E0CirXw+8A0=
+SHA256 (Pkgfile) = baa1ad65b89f3cbecef41193f5ba7622d964ac6e9c3c0839a98ed855d89b693f
 SHA256 (.footprint) = ff78e3e8d17ff0381702ecdbfc3dd895283af42f5254b78fb90ace1749a4337d
 SHA256 (cups-2.2.11-source.tar.gz) = f58010813fd6903f690cdb0c0b91e4d1bc9e5b9570c28734229ba3ed2908b76c
