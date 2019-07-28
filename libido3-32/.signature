@@ -1,6 +1,6 @@
 untrusted comment: verify with /etc/ports/crux-steam.pub
-RWSi213OStfp/nnZL5Y2D5cLKkhHamWaJno8p7O6xR16GHtHLJbZwEKO9JsgdRJ3bDzwHyOuk0wcJgldoC9uDUqN0Jqalosy1Ag=
-SHA256 (Pkgfile) = cf0b2bc25ee17930251f65423aceb569c86a62d6e0776d52639b705fe04ba058
+RWSi213OStfp/lbi4yfrIwH+H1UKmNuyyO74yVf4C/j4UXzlyt4+JAqJLGZAKQ3Ebo7+8L6EhuyatZ8VSWeupGonzXHqo3qY3QQ=
+SHA256 (Pkgfile) = 3665c326b3ad697004c3cac28d1db906f372f0913b7968296f2dd49e33138827
 SHA256 (.footprint) = 4aed7b56f36b7ea372a31eaebf9ccbb64c0fc93f6a09b76ea29e1ac54810a196
 SHA256 (libido3-16.10.tar.gz) = 9b205871268379560b00bc960fabc5c0c71b480d4469c738fb01f3f19e20ea6a
 SHA256 (ido-optional-ubuntu-private.patch) = 9b627a4c7ec2d3f2fa0c28761445e7b961a9ca5a473fe2b8a462018b667e2996
