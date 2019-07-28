@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/crux-steam.pub
-RWSi213OStfp/oRgS72e6w3IlWcAsdzPwCnrnoT7tQCAZxyl6TRdgUEu0p1Uz4WEX6R+zQjF5uLeSEfh4n0gbENKrhojXr0GuQs=
-SHA256 (Pkgfile) = d1d3b7e7b5748c52bb68f6f64c14b4bfe3259f1aade116161b0adfe4a2dea32f
+RWSi213OStfp/h112YXtWdJLYGn2saMLLO7pzJo27ou+UplabzFkPLLND2SiwjKcGvztwBHej8LWt+QocYaF3pp1Ou43uW8+nAU=
+SHA256 (Pkgfile) = 1dcc1f6b8e63a217a774eadd109f0c029aa4bbd7ea44021d9e9cff82a2efa16f
 SHA256 (.footprint) = d0d32a85f989c13a2dfb4ab50657ee4df8ceb52433745965d7c4b1612f30ca53
 SHA256 (dbus-glib-0.110.tar.gz) = 7ce4760cf66c69148f6bd6c92feaabb8812dee30846b24cd0f7395c436d7e825
