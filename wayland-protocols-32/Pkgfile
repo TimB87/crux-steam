@@ -1,10 +1,10 @@
 # Description: Specifications of extended Wayland protocols
 # URL: https://wayland.freedesktop.org/
 # Maintainer: Tim Biermann, tbier at posteo dot de
-# Depends on: wayland-32
+# Depends on: wayland-32 wayland-protocols
 
 name=wayland-protocols-32
-version=1.17
+version=1.18
 release=1
 source=(https://wayland.freedesktop.org/releases/wayland-protocols-$version.tar.xz)
 
