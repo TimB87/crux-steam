@@ -1,6 +1,0 @@
-untrusted comment: verify with /etc/ports/crux-steam.pub
-RWSi213OStfp/mgmIEe3iezUS/QQDRhD6owvab214V0Biz+wOE/HLs3NMFwJGEfZC9hfGEOl+NiShs4bkp0A7c48Nh11VyW7jQc=
-SHA256 (Pkgfile) = 54d718e4e22b04f3b961efbf6b0dd4d258bcebe3420c1c47f0de05a2794b36a6
-SHA256 (.footprint) = 3009408beecfcd977220520a5be25f71f0ab29cfb5ae65c8eca6d413d4545e64
-SHA256 (glib-2.60.3.tar.xz) = 04ab0d560d45790d055f50db2d69974eab8b693a77390075462c56e652b760b9
-SHA256 (multilib.patch) = a0292252363f32324d03486fee0b84a79781bdcb51ad913a2bf37530d74c3b24
