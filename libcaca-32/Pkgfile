@@ -1,7 +1,7 @@
 # Description: Color AsCii Art library (32-bit)
 # URL: http://caca.zoy.org/wiki/libcaca
 # Maintainer: Tim Biermann, tbier at posteo dot de
-# Depends on: xorg-libx11-32
+# Depends on: ncurses-32 xorg-libx11-32
 
 name=libcaca-32
 version=0.99.beta19
