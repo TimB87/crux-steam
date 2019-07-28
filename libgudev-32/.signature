@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/crux-steam.pub
-RWSi213OStfp/r2fGXIUqyqlrv0AWpJObhb5x8SzJsw8OCsHUnvkQ6eJpIq4/Be28JkSNGm5dOeIF/69jjVDkOOr6077FyZiIgQ=
-SHA256 (Pkgfile) = 10b5b07f5ded96b95a5d268e07aea09c03554b03e06794520dd36efb72b066a0
+RWSi213OStfp/jvvHy97rOkHSnUBEw6t56aWG5bDOZfT5hF4brjE2eOdDR9EbnV2JDAdgs/CP3VlCc1q8p8wovE23TtutZCpCw8=
+SHA256 (Pkgfile) = 5908a556098f1ba2ab3854046222469eea5faa5b6ec1b027406fa47747652f1f
 SHA256 (.footprint) = 5285e8365af3742040d9700176f55915e1cdf3c53ee4277de90dfde8fa5dbec0
 SHA256 (libgudev-232.tar.xz) = ee4cb2b9c573cdf354f6ed744f01b111d4b5bed3503ffa956cefff50489c7860

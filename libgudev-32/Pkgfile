@@ -1,7 +1,7 @@
 # Description: GObject bindings for libudev
 # URL: https://wiki.gnome.org/Projects/libgudev
 # Maintainer: Tim Biermann, tbier at posteo dot de
-# Depends on: libgudev
+# Depends on: glib-32 libgudev
 
 name=libgudev-32
 version=232
