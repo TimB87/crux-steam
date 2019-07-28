@@ -8,14 +8,6 @@ drwxr-xr-x	root/root	usr/lib32/libva1/
 lrwxrwxrwx	root/root	usr/lib32/libva1/libva-drm.so -> libva-drm.so.1.4000.0
 lrwxrwxrwx	root/root	usr/lib32/libva1/libva-drm.so.1 -> libva-drm.so.1.4000.0
 -rwxr-xr-x	root/root	usr/lib32/libva1/libva-drm.so.1.4000.0
--rwxr-xr-x	root/root	usr/lib32/libva1/libva-egl.la
-lrwxrwxrwx	root/root	usr/lib32/libva1/libva-egl.so -> libva-egl.so.1.4000.0
-lrwxrwxrwx	root/root	usr/lib32/libva1/libva-egl.so.1 -> libva-egl.so.1.4000.0
--rwxr-xr-x	root/root	usr/lib32/libva1/libva-egl.so.1.4000.0
--rwxr-xr-x	root/root	usr/lib32/libva1/libva-glx.la
-lrwxrwxrwx	root/root	usr/lib32/libva1/libva-glx.so -> libva-glx.so.1.4000.0
-lrwxrwxrwx	root/root	usr/lib32/libva1/libva-glx.so.1 -> libva-glx.so.1.4000.0
--rwxr-xr-x	root/root	usr/lib32/libva1/libva-glx.so.1.4000.0
 -rwxr-xr-x	root/root	usr/lib32/libva1/libva-tpi.la
 lrwxrwxrwx	root/root	usr/lib32/libva1/libva-tpi.so -> libva-tpi.so.1.4000.0
 lrwxrwxrwx	root/root	usr/lib32/libva1/libva-tpi.so.1 -> libva-tpi.so.1.4000.0
@@ -34,8 +26,6 @@ lrwxrwxrwx	root/root	usr/lib32/libva1/libva.so.1 -> libva.so.1.4000.0
 -rwxr-xr-x	root/root	usr/lib32/libva1/libva.so.1.4000.0
 drwxr-xr-x	root/root	usr/lib32/libva1/pkgconfig/
 -rw-r--r--	root/root	usr/lib32/libva1/pkgconfig/libva-drm.pc
--rw-r--r--	root/root	usr/lib32/libva1/pkgconfig/libva-egl.pc
--rw-r--r--	root/root	usr/lib32/libva1/pkgconfig/libva-glx.pc
 -rw-r--r--	root/root	usr/lib32/libva1/pkgconfig/libva-tpi.pc
 -rw-r--r--	root/root	usr/lib32/libva1/pkgconfig/libva-wayland.pc
 -rw-r--r--	root/root	usr/lib32/libva1/pkgconfig/libva-x11.pc
