@@ -1,7 +1,7 @@
 # Description: A small and lightweight implementation of the XDG Sound Theme Specification
 # URL: http://0pointer.de/lennart/projects/libcanberra
 # Maintainer: Tim Biermann, tbier at posteo dot de
-# Depends on: libcanberra
+# Depends on: libcanberra gdbm-32 gtk-32 pulseaudio-32 xorg-libxdamage-32 xorg-libxtst-32
 
 name=libcanberra-32
 version=0.30
