@@ -25,4 +25,6 @@ build() {
   make
   make DESTDIR=$PKG install
   rm -fr $PKG/usr/include
+  rm -fr $PKG/usr/lib32/girepository-1.0/
+  rm -fr $PKG/usr/share
 }
