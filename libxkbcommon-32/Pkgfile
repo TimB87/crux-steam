@@ -1,7 +1,7 @@
 # Description: A library to handle keyboard descriptions.
 # URL: https://xkbcommon.org/
 # Maintainer: Danny Rawlins, crux at romster dot me
-# Depends on: xkeyboard-config
+# Depends on: libxkbcommon xorg-libxcb-32
 
 name=libxkbcommon-32
 version=0.8.4
