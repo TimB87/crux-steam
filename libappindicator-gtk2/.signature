@@ -1,7 +1,7 @@
 untrusted comment: verify with /etc/ports/crux-steam.pub
-RWSi213OStfp/nsNldCj1Z3Zxtl/y+pb87NbkBOmCiRlmu1bWlt7cm1NaZG4zsDLTM7hcwjyl+D3Ra9JtCNN4+um+OVywL/RugE=
-SHA256 (Pkgfile) = c9d0103d92e9740c8863621c4368b74b0e04bbab96d8c99ca1d3406b2cd58091
-SHA256 (.footprint) = e6e872056d90c4c7d6e82e16990fe48404b3575a8bcaf38d9543761175aba16e
+RWSi213OStfp/k+X1xhB+mwsTx0jgyWWXdp6o746KOgZ8ghfeUTF9XLDUmgybufaYBB2RAhaBGdXm8a9WdPuWWPu6+SJUQGhdw4=
+SHA256 (Pkgfile) = 1dfe0ed5c5d647ba4eac8244f223415beeb0367a26cb98304bca7f7a1037fe21
+SHA256 (.footprint) = 8a0fea85004c0edcbbedf708b188276609964453f29c6e760072e07bdeba6e3a
 SHA256 (libappindicator-16.10.tar.gz) = f33e0e06096fa8f8ca560ffcd84b8eb64830fa7308b30964c77bd5f45d0c497e
 SHA256 (0001-Glib.Timeout-fix.patch) = bc7e3d5db0b9b324dc072f807519547fdc2c96514eb17aa07a71117a787d9b80
 SHA256 (0002-Fix-mono-nunit-pkgconfig-name.patch) = d60af265af61cf429158267b391c377adb8ee8a24f0cef72c3f10f202cec6c6f
