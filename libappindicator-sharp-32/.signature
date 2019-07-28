@@ -1,6 +1,6 @@
 untrusted comment: verify with /etc/ports/crux-steam.pub
-RWSi213OStfp/lzUwRYcD9WZt/yZ5HfiZB2kFfXMWL7ya3L9Qj04PjgyO7btO8O6Gr3kL477jIduPgU+ZYX2ClkALr2qQvzeOgA=
-SHA256 (Pkgfile) = 9be0b860a8d99ec163a92b85beb7e3f7f452103f36e18866691c62f10f94b690
+RWSi213OStfp/o0IYPIbFkvE/0RKs4mLtwa5IQEtLeVTmhxPwWQ+ff/RVkO/GmDLiduxF9cYi9IOcz9Hu7+NB1g3BYmPSEfs2QY=
+SHA256 (Pkgfile) = ecdcf1713cec13fec78872df7a95a1c13595f6b964a2a0439a166bf47a32a4fa
 SHA256 (.footprint) = 40418cb59ede6777a04e1d293937dff2b989446b78135e0ddcb6a6b23d3b201e
 SHA256 (libappindicator-16.10.tar.gz) = f33e0e06096fa8f8ca560ffcd84b8eb64830fa7308b30964c77bd5f45d0c497e
 SHA256 (0001-Glib.Timeout-fix.patch) = bc7e3d5db0b9b324dc072f807519547fdc2c96514eb17aa07a71117a787d9b80
