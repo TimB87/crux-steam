@@ -32,7 +32,7 @@ build() {
  # patch -Np1 -i $SRC/no-python.patch
 
   sed -i -e 's/ -Werror//' src/Makefile.am
-  export PKG_CONFIG_PATH='/usr/lib32/pkgconfig:/usr/lib/pkgconfig'
+  export PKG_CONFIG_PATH='/usr/lib32/pkgconfig:/usr/lib/pkgconfig:/usr/share/pkgconfig'
   export CFLAGS="${CFLAGS} -Wno-deprecated-declarations"
   NOCONFIGURE=1 ./autogen.sh
   CXXFLAGS="$CXXFLAGS -std=c++11" \
