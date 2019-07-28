@@ -12,7 +12,7 @@ build() {
   cd libindicator-$version
   export CC='gcc -m32'
   export CXX='g++ -m32'
-  export PKG_CONFIG_PATH='/usr/lib32/pkgconfig:/usr/lib/pkgconfig'
+  export PKG_CONFIG_PATH='/usr/lib32/pkgconfig:/usr/lib/pkgconfig:/usr/share/pkgconfig'
   sed -e 's/-Werror -Wno-error=deprecated-declarations//g' -i libindicator/Makefile.am
   sed -e 's/--enable-gtk-doc//g' -i autogen.sh
   NOCONFIGURE=1 ./autogen.sh
