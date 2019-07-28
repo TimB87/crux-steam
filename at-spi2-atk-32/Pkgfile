@@ -1,7 +1,7 @@
-# Description:	atk to at-spi2 bridge library
-# URL:		http://developer.gnome.org/atk/unstable/atk-AtkSocket.html
+# Description:  atk to at-spi2 bridge library
+# URL:    http://developer.gnome.org/atk/unstable/atk-AtkSocket.html
 # Maintainer: Tim Biermann, tbier at posteo dot de
-# Depends on:	atk, at-spi2-core
+# Depends on: atk-32 at-spi2-core-32
 
 name=at-spi2-atk-32
 version=2.32.0
