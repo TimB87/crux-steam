@@ -1,7 +1,7 @@
 # Description: Video Acceleration API to enable hardware accelerated video decode/encode.
 # URL: https://01.org/linuxmedia/vaapi
 # Maintainer: Tim Biermann, tbier at posteo dot de
-# Depends on: libdrm-32 libffi-32 libglvnd-32 wayland-32 xorg-libxfixes-32
+# Depends on: libdrm-32 libffi-32 libglvnd-32 wayland-32 xorg-libxfixes-32 libva1
 
 name=libva1-32
 version=1.8.3
