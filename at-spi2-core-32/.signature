@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/crux-steam.pub
-RWSi213OStfp/p+fpC/+DcSMjXKGYGeM6L+xXh9a0Dy3D7hVcUVe0iTu4MWn9Vytx4k9V6jxadQtC3/cx+KlAjlx26+Qbz3EeQQ=
-SHA256 (Pkgfile) = 5a832849471e5d8732fb2ff9fedc1305df61797ad06e287abe054b88d3ae049f
+RWSi213OStfp/ldBZ6NuDb+XZ8BT2iSrbKNktk0p4ww1ZxI8gtlADnVZAsC44cwHm08s4wwqG1GjiHMwyzH6NZ9eoeNWzzzcrQg=
+SHA256 (Pkgfile) = 6571df82aea1cf8cec442f875308511f6d9f60a573cd3c589dc5ef3c13236ad6
 SHA256 (.footprint) = bc1466eb10330a9bd91a910093ab9fe04834c2624ef96566ea885dcd8dcd898a
-SHA256 (at-spi2-core-2.32.0.tar.xz) = 43a435d213f8d4b55e8ac83a46ae976948dc511bb4a515b69637cb36cf0e7220
+SHA256 (at-spi2-core-2.32.1.tar.xz) = 3c2aa937ebfaca2c86569bce9b16a34fbe20d69ef0c58846313b1c42f53b0d53
