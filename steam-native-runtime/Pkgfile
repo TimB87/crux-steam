@@ -1,10 +1,8 @@
 # Description: Meta package to run steam-native
 # URL: https://steampowered.com
 # Maintainer: Tim Biermann, tbier at posteo dot de
-# Depends on: brotli-32 cups-32 jansson-32 libcaca-32 libcanberra-32 libndp-32 libnewt-32 libnl-32 libpsl-32 libsdl2-32 libudev0-shim-32 libva1-32 openssl1-32 python3-32 rtmpdump-32 steam vulkan-loader-32 xorg-libxscrnsaver-32
-# Optional:
-#  - libappindicator-sharp-32
-#   - for gtk tray icon support
+# Depends on: brotli-32 cups-32 jansson-32 libcaca-32 libcanberra-32 libndp-32 libnewt-32 libnl-32 libpsl-32 libsdl2-32 libselinux libudev0-shim-32 libva1-32 networkmanager-32 openssl1-32 rtmpdump-32 steam vulkan-loader-32 xorg-libxscrnsaver-32
+# Optional: pulseaudio-32 apulse-32 libappindicator-sharp-32
 
 name=steam-native-runtime
 version=0.1
@@ -13,11 +11,17 @@ source=()
 
 build() {
   install -d $PKG/usr/lib/steam
-  ln -sf /usr/lib/libcurl.so.3 ${PKG}/usr/lib/steam/libcurl.so.3
-  ln -sf /usr/lib/libcurl.so.4.5.0 ${PKG}/usr/lib/steam/libcurl.so.4
-  ln -sf /usr/lib/libcurl.so.4.5.0 ${PKG}/usr/lib/steam/libcurl.so.4.5.0
+  ln -s /usr/lib/libcurl.so.3 ${PKG}/usr/lib/steam/libcurl.so.3
+  ln -s /usr/lib/libcurl.so.4.5.0 ${PKG}/usr/lib/steam/libcurl.so.4
+  ln -s /usr/lib/libcurl.so.4.5.0 ${PKG}/usr/lib/steam/libcurl.so.4.5.0
+
   install -d ${PKG}/usr/lib32/steam
-  ln -sf /usr/lib32/libcurl.so.3 ${PKG}/usr/lib32/steam/libcurl.so.3
-  ln -sf /usr/lib32/libcurl.so.4.5.0 ${PKG}/usr/lib32/steam/libcurl.so.4
-  ln -sf /usr/lib32/libcurl.so.4.5.0 ${PKG}/usr/lib32/steam/libcurl.so.4.5.0
+  ln -s /usr/lib32/libcurl.so.3 ${PKG}/usr/lib32/steam/libcurl.so.3
+  ln -s /usr/lib32/libcurl.so.4.5.0 ${PKG}/usr/lib32/steam/libcurl.so.4
+  ln -s /usr/lib32/libcurl.so.4.5.0 ${PKG}/usr/lib32/steam/libcurl.so.4.5.0
+
+  # Apparently libpcre.so.3 is just a Debian-specific version of libpcre.so.1
+  # https://sources.debian.org/src/pcre3/2:8.39-12/debian/README.Debian/
+  ln -s /usr/lib/libpcre.so ${PKG}/usr/lib/steam/libpcre.so.3
+  ln -s /usr/lib32/libpcre.so ${PKG}/usr/lib32/steam/libpcre.so.3
 }
