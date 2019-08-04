@@ -1,7 +1,0 @@
-untrusted comment: verify with /etc/ports/crux-steam.pub
-RWSi213OStfp/nqMfIbmLvtRCwZms6igLfqKBNbICPqoedF/lQfKOltsr7M6Mk8X+Y8WUb3qRASoxFF8zqoKV1J5OI0hJ6P0MgU=
-SHA256 (Pkgfile) = 2c5f15b9711cc38c0c4e50413f3a69b902cc0b2b664a6c97e9c6c2a70cdaa74b
-SHA256 (.footprint) = c63cc146b8919ee4188ab37ea7dfcd6303ea2fb9cc2817de41ea168c05590e6e
-SHA256 (openssl-1.0.2s.tar.gz) = cabd5c9492825ce5bd23f3c3aeed6a97f8142f606d893df216411f07d1abab96
-SHA256 (no-rpath.patch) = 754d6107a306311e15a1db6a1cc031b81691c8b9865e8809ac60ca6f184c957c
-SHA256 (openssl-1.0-versioned-symbols.patch) = 353a84e4c92e36c379ebd9216b8f8fb9c271396583561eb84ac8c825979acaa6

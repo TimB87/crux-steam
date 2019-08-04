@@ -1,6 +1,6 @@
 # Description: A library to handle keyboard descriptions.
 # URL: https://xkbcommon.org/
-# Maintainer: Tim Biermann, tbier at posteo dot de
+# Maintainer: Danny Rawlins, crux at romster dot me
 # Depends on: libxkbcommon xorg-libxcb-32
 
 name=libxkbcommon-32
@@ -9,12 +9,14 @@ release=1
 source=(https://xkbcommon.org/download/libxkbcommon-$version.tar.xz)
 
 build() {
-  cd libxkbcommon-$version
-  ./configure \
-    --prefix=/usr \
+	cd libxkbcommon-$version
+
+	./configure \
+		--prefix=/usr \
     --libdir=/usr/lib32 \
-    --disable-docs
-  make
-  make DESTDIR=$PKG install
+		--disable-docs
+
+	make
+	make DESTDIR=$PKG install
   rm -fr $PKG/usr/include
 }

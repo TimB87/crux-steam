@@ -1,6 +1,0 @@
-untrusted comment: verify with /etc/ports/crux-steam.pub
-RWSi213OStfp/qjwGxlapLzC1dVf4SpkPn93yqrjCbIDHUcBZwuWgT6DYWLd+G9ntdfXw/hYbGnUe2Qp9mmQMxEHkswSIrPNAg0=
-SHA256 (Pkgfile) = 38451f6ba69092aa6d0ba60dd039d33e18959af4ecb0f4a0ed0252e20cd07cb8
-SHA256 (.footprint) = 486f4af1c40193c6430987190bfc28825d038ae3f58166525a2883438eaa4227
-SHA256 (libdbusmenu_18.10.20180917~bzr490+repack1.orig.tar.xz) = f670bc86ea5ae1488b2405f371ceb870ce353127578f9b0aed2862cbbc42053b
-SHA256 (0001_no-deprecated-gnome-common-macros.patch) = a65626ad3dd26a81037332d881736587929c7f8935cd34d2fc3e7f4a988d5a72

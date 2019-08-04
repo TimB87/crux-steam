@@ -1,0 +1,16 @@
+# Description: SELinux binary policy manipulation librarys
+# URL: http://userspace.selinuxproject.org
+# Maintainer: Tim Biermann, tbier at posteo dot de
+
+name=libsepol
+version=2.9
+release=1
+source=(https://github.com/SELinuxProject/selinux/releases/download/20190315/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	make
+	make DESTDIR=$PKG SHLIBDIR=/usr/lib install
+
+	rm -r $PKG/usr/share/man/ru
+}

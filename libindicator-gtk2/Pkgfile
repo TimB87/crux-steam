@@ -1,7 +1,7 @@
 # Description: Set of symbols and convenience functions for Ayatana indicators (GTK+ 2 library)
 # URL: https://launchpad.net/libindicator
 # Maintainer: Tim Biermann, tbier at posteo dot de
-# Depends on: graphite2 gtk xorg-libxdamage
+# Depends on: graphite2 gtk xorg-libxdamage gnome-common
 
 name=libindicator-gtk2
 version=16.10

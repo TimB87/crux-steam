@@ -1,7 +1,0 @@
-untrusted comment: verify with /etc/ports/crux-steam.pub
-RWSi213OStfp/ozDrleKmB1xBcNulQPplaVcxHMu/OjGV7WeAPKnkUbWzXnSWFjkj3LbwSaSq46ridlEdzADs8XiuHWCYjfSKg8=
-SHA256 (Pkgfile) = d239b789557667f49285ee6d5a8a57b850632b1402d5c2191e8145348d40ebb9
-SHA256 (.footprint) = 8c0ceb9a1eb6054641a8506a59d3a1f856f0b996a4bebe3a670e8cac642509f6
-SHA256 (Python-3.7.3.tar.xz) = da60b54064d4cfcd9c26576f6df2690e62085123826cff2e667e72a91952d318
-SHA256 (dont-make-libpython-readonly.patch) = a2be8b0573072ae3332bba2ccc646f0d5280af354a59066149f9a92b5f48c64a
-SHA256 (0001-compileall-Fix-ddir-when-recursing.patch) = c502d1de8464602e0d931899d9d388fb27b4b18601248088e51f270166fae07f

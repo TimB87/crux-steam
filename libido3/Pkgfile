@@ -1,7 +1,7 @@
 # Description: Widgets and other objects used for indicators
 # URL: https://github.com/AyatanaIndicators/ayatana-ido
 # Maintainer: Tim Biermann, tbier at posteo dot de
-# Depends on: gtk3 vala
+# Depends on: gtk3 vala gnome-common gtk-doc
 
 name=libido3
 version=16.10
@@ -17,9 +17,7 @@ build() {
   patch -Np1 -i $SRC/0001-Temporarily-disable-previous-button-drop-shadow-draw.patch
   ./autogen.sh
   ./configure --prefix=/usr \
-    --disable-static \
-    --disable-gtk-doc \
-    --enable-ubuntu-private-api=no
+     --enable-ubuntu-private-api=no
   make
   make DESTDIR=$PKG install
 }

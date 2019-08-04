@@ -1,7 +1,7 @@
 # Description: Library for passing menus over DBus - gtk3 Files
 # URL: https://launchpad.net/libdbusmenu
 # Maintainer: Tim Biermann, tbier at posteo dot de
-# Depends on: gtk3 libdbusmenu-glib
+# Depends on: gtk3 libdbusmenu-glib gtk
 
 name=libdbusmenu-gtk3
 version=18.10

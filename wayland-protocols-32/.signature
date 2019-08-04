@@ -1,5 +1,0 @@
-untrusted comment: verify with /etc/ports/crux-steam.pub
-RWSi213OStfp/p7pA1Aacl348enXNrLQAvdH0hDPrO5sxP7E10LzWuGTqSjn6PlKyYQd9+dLE72fkTA1s6tVkSwZ+Y0G4F4cVgg=
-SHA256 (Pkgfile) = 06363cb3c7181f2aacce4e38b24eea655931d653123322c9f1ed1dd193a36313
-SHA256 (.footprint) = 478ce361fc78ec1110bf9daadb92790e2cac325cdd89abb59d992158a80c3307
-SHA256 (wayland-protocols-1.18.tar.xz) = 3d73b7e7661763dc09d7d9107678400101ecff2b5b1e531674abfa81e04874b3

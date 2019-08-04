@@ -2,7 +2,7 @@
 # URL: http://www.mono-project.com
 # Maintainer: Tim Biermann, tbier at posteo dot de
 # Packager: poq <jbloomfield at live dot com>
-# Depends on: cmake python
+# Depends on: python cmake zlib
 
 name=mono
 version=6.0.0.313

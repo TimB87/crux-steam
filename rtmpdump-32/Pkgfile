@@ -32,5 +32,6 @@ build() {
     mandir='/usr/share/man' \
     DESTDIR=$PKG \
     install
-  rm -fr $PKG/usr/{bin,include,share}
+
+  rm -r $PKG/usr/{bin,include,share}
 }

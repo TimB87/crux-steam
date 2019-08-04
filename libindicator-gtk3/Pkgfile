@@ -1,7 +1,7 @@
 # Description: Set of symbols and convenience functions for Ayatana indicators (GTK+ 3 library)
 # URL: https://launchpad.net/libindicator
 # Maintainer: Tim Biermann, tbier at posteo dot de
-# Depends on: libido3
+# Depends on: libido3 gnome-common
 
 name=libindicator-gtk3
 version=16.10
